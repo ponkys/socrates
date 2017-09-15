@@ -1,0 +1,19 @@
+{{!-- card-default --}}
+<div class="col-24 col-lg-8 d-flex align-items-stretch {{className}}">
+	<div class="card bg-gray-lightest">
+		<div class="row no-gutters">
+			<div class="col-8 col-lg-24">
+				{{!-- img --}}
+				<div class="h-100 rect rect-4-3 rect-lg-16-9" style="background-image: url(https://image-service.onefootball.com/resize?image=http%3A%2F%2Fimages.performgroup.com%2Fdi%2Flibrary%2Fomnisport%2F56%2F66%2Fousmane-dembele-cropped_10pnyw0y9egvz1emqopoomquzj.jpg%3Ft%3D691926238&q=25&w=1080&fit=max); background-size:cover;"></div>
+			</div>
+
+			<div class="col-16 col-lg-24">
+				{{!-- body --}}
+				<div class="card-body m-md d-flex flex-column justify-content-between flex-grow">
+					<h5 class="card-title">{{title}}</h5>
+					{{> @text-default tag="p" text="Top Stories"}}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

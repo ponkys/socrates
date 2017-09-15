@@ -1,0 +1,20 @@
+// Background Colors
+  @include bg-variant('.bg-green-dark', $brand-green-dark);
+  @include bg-variant('.bg-green-light', $brand-green-light);
+  @include bg-variant('.bg-gray-blue', $brand-gray-blue);
+  @include bg-variant('.bg-gray-dark', $brand-gray-dark);
+  @include bg-variant('.bg-gray', $brand-gray);
+  @include bg-variant('.bg-gray-light', $brand-gray-light);
+  @include bg-variant('.bg-gray-lighter', $brand-gray-lighter);
+  @include bg-variant('.bg-gray-lightest', $brand-gray-lightest);
+  @include bg-variant('.bg-orange', $brand-orange);
+  @include bg-variant('.bg-white', $white);
+
+// Text Colors
+  @include text-emphasis-variant('.text-green-light', $brand-green);
+  @include text-emphasis-variant('.text-green-dark', $brand-green-dark);
+  @include text-emphasis-variant('.text-danger', $brand-danger);
+  @include text-emphasis-variant('.text-gray-blue', $brand-gray-blue);
+  @include text-emphasis-variant('.text-gray', $brand-gray);
+  // @include text-fill-emphasis-variant('.text-gray-light', $brand-gray-light, true);
+  @include text-emphasis-variant('.text-gray-lighter', $brand-gray-lighter);

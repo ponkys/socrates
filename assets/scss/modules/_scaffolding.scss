@@ -1,0 +1,25 @@
+// Scafolding
+
+html, body {
+	-webkit-font-smoothing: antialiased !important;
+	font-smoothing: antialiased !important;
+	text-rendering: optimizeLegibility;
+
+	font-size: $font-size-root-mobile;
+	@include media-breakpoint-up(xl) {
+		font-size: $font-size-root-desktop;
+	}
+}
+
+section,
+footer {
+	margin-top: 60px;
+	@include media-breakpoint-up(lg) {
+		margin-top: 90px;
+	}
+}
+
+a, svg {
+  text-decoration: none !important;
+  @include transition($transition-default);
+}

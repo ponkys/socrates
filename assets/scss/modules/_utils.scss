@@ -1,0 +1,111 @@
+// Utilities
+
+// flexbos utils
+.flex-grow {
+	flex-grow: 1;
+}
+
+// Spacing
+@include spacing-creator-factory($spacing-array, mobile); // mobile
+
+@include media-breakpoint-up(lg) {
+	@include spacing-creator-factory($spacing-array, desktop); // Desktop
+}
+
+
+// Box Shadow
+.elevated {
+	box-shadow: 0 9px 18px 0 rgba(black, 0.12);
+}
+
+.elevated-hover {
+	@include transition($transition-default);
+	&.elevated:hover {
+		box-shadow: 0 9px 18px 0 rgba(black, 0.18);
+	}
+}
+
+// scroll on mobile
+@include media-breakpoint-down(md) {
+	.container-scroll {
+		width: 100vw;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.row-scroll {
+		width: 100%; /* arbitary for demo only */
+		margin: 0;
+		white-space: nowrap;
+		overflow-y: hidden;
+		overflow-x: scroll;
+		-webkit-overflow-scrolling: touch;
+		display: block;
+	}
+
+	.col-scroll {
+		display: inline-block;
+	}
+}
+
+// position absolute center
+.center-absolute {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+// hide overflow
+.overflow-hidden {
+	overflow: hidden;
+}
+
+.square {
+	&.square-xs { @include size(12px); }
+	&.square-sm { @include size(18px); }
+	&.square-md { @include size(24px); }
+	&.square-lg { @include size(30px); }
+	&.square-xl { @include size(48px); }
+
+	@include media-breakpoint-up(xl) {
+		&.square-lg-xs { @include size(18px); }
+		&.square-lg-sm { @include size(24px); }
+		&.square-lg-md { @include size(36px); }
+		&.square-lg-lg { @include size(48px); }
+		&.square-lg-xl { @include size(72px); }
+	}
+}
+
+.rect {
+	position: relative;
+	display: block;
+	height: 0;
+	padding: 0;
+	overflow: hidden;
+
+	&.rect-16-9 {
+		padding-bottom: 56.25%;
+	}
+	&.rect-4-3 {
+		padding-bottom: 75%;
+	}
+
+	@include media-breakpoint-up(lg) {
+		&.rect-lg-16-9 {
+			padding-bottom: 56.25%;
+		}
+		&.rect-lg-4-3 {
+			padding-bottom: 75%;
+		}
+		&.rect-lg-1-1 {
+			padding-bottom: 100%;
+		}
+	}
+}
+
+.icon-default {
+	height: 1em;
+	width: auto;
+}
