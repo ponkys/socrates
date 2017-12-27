@@ -1,0 +1,20 @@
+// Mixins
+
+// Text color + fill color for svg icons
+@mixin text-fill-emphasis-variant($parent, $color, $fill-enabled: false) {
+	#{$parent} {
+		color: $color !important;
+		svg {
+			fill: $color;
+		}
+	}
+	a#{$parent} {
+		@include hover-focus {
+			color: darken($color, 10%) !important;
+
+			svg {
+				fill: darken($color, 10%) !important;
+			}
+		}
+	}
+}

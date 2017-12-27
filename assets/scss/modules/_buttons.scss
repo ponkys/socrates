@@ -1,0 +1,50 @@
+.btn {
+	cursor: pointer;
+	padding-left: 2rem; // 32
+	padding-right: 2rem; // 32
+
+	&.disabled,
+	&:disabled {
+		pointer-events: none;
+	  background-color: $brand-gray-lighter;
+    color: $brand-gray;
+    border-color: $brand-gray-lighter;
+    opacity: .5;
+	}
+
+	&.btn-lg {
+		padding-left: $input-btn-padding-y-lg * 3; // 48
+		padding-right: $input-btn-padding-y-lg * 3; // 48
+	}
+	&.btn-sm {
+		padding-left: $input-btn-padding-x-sm * 2; // 16
+		padding-right: $input-btn-padding-x-sm * 2; // 16
+	}
+
+	&.elevated-hover {
+		&:hover {
+			transform: translateY(-2px);
+		}
+	}
+}
+
+// Custom buttons
+.btn-primary-dark {
+	@include button-variant($brand-green-dark, $brand-green-dark);
+}
+
+.btn-primary-light {
+	@include button-variant($brand-green-light, $brand-green-light);
+}
+
+.btn-gray-lighter {
+	@include button-variant($brand-gray-lighter, $brand-gray-lighter);
+}
+
+.btn-facebook {
+	@include button-variant($facebook, $facebook);
+}
+
+.btn-twitter {
+	@include button-variant($twitter, $twitter);
+}

@@ -56,7 +56,7 @@ gulp.task('css:watch', function () {
     ], gulp.series('css'));
 });
 
-gulp.task('css', gulp.series('css:clean', 'css:process'));
+gulp.task('css', gulp.series('css:clean','css:watch', 'css:process'));
 
 
 /* Fonts */

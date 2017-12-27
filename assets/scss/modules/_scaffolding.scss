@@ -11,14 +11,6 @@ html, body {
 	}
 }
 
-section,
-footer {
-	margin-top: 60px;
-	@include media-breakpoint-up(lg) {
-		margin-top: 90px;
-	}
-}
-
 a, svg {
   text-decoration: none !important;
   @include transition($transition-default);

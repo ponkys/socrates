@@ -1,0 +1,26 @@
+// Box Shadow
+
+.elevated-1 {
+	box-shadow: 0 4px 16px -4px rgba(black, 0.16);
+}
+
+.elevated-2 {
+	box-shadow: 0 8px 32px -4px rgba($brand-gray-darker,.16);
+}
+
+.elevated-3 {
+	box-shadow: 0 16px 40px -8px rgba($brand-gray-darker,.28);
+}
+
+.elevated-4 {
+	box-shadow: 0 24px 48px -8px rgba($brand-gray-darker,.28);
+}
+
+.elevated-hover {
+	transition: $transition-default;
+	@extend .elevated-1;
+
+	&:hover {
+		@extend .elevated-3;
+	}
+}

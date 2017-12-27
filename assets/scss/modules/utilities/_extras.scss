@@ -1,29 +1,33 @@
-// Utilities
+// Extras
+
 
 // flexbos utils
 .flex-grow {
 	flex-grow: 1;
 }
 
-// Spacing
-@include spacing-creator-factory($spacing-array, mobile); // mobile
-
-@include media-breakpoint-up(lg) {
-	@include spacing-creator-factory($spacing-array, desktop); // Desktop
+.alert-info {
+	@include alert-variant($brand-blue-light, $brand-blue-light, $brand-blue);
 }
 
-
-// Box Shadow
-.elevated {
-	box-shadow: 0 9px 18px 0 rgba(black, 0.12);
+.alert-danger {
+	@include alert-variant($brand-red-light, $brand-red-light, $brand-red);
 }
 
-.elevated-hover {
-	@include transition($transition-default);
-	&.elevated:hover {
-		box-shadow: 0 9px 18px 0 rgba(black, 0.18);
-	}
+.alert-warning {
+	@include alert-variant($brand-orange-light, $brand-orange-light, $brand-orange);
 }
+
+.alert-primary {
+	@include alert-variant($brand-green-light, $brand-green-light, $brand-green-dark);
+}
+
+// .elevated-hover {
+// 	@include transition($transition-default);
+// 	&.elevated:hover {
+// 		box-shadow: 0 9px 18px 0 rgba(black, 0.18);
+// 	}
+// }
 
 // scroll on mobile
 @include media-breakpoint-down(md) {

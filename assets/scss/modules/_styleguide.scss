@@ -2,11 +2,11 @@
 
 // fonts
   $font-default:  -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
-  $font-brand:    'Onefootball Headline Medium', $font-default;
+  $font-brand:    'Onefootball Medium', $font-default;
   $font-punchline: 'Onefootball Punchline', $font-brand;
 
 /*  Typography
-    for more info refer to _typo.scss
+    for more info refer to _typography.scss
 */
   // Mobile typography
 
@@ -18,33 +18,35 @@
   $font-size-mobile-sm:     0.916rem;   // 12px
   $font-size-mobile-xs:     0.785rem;   // 11px
 
-  $font-size-mobile-h1:     1.571rem;   // 22px
-  $font-size-mobile-h2:     1.429rem;   // 20px
-  $font-size-mobile-h3:     1.286rem;   // 18px
-  $font-size-mobile-h4:     1.143rem;   // 16px
-  $font-size-mobile-h5:     1.071rem;   // 15px
+  $font-size-mobile-h1:     1.714rem;   // 24px
+  $font-size-mobile-h2:     1.571rem;   // 22px
+  $font-size-mobile-h3:     1.429rem;   // 20px
+  $font-size-mobile-h4:     1.286rem;   // 18px
+  $font-size-mobile-h5:     1.143rem;   // 16px
   $font-size-mobile-h6:     1.000rem;   // 14px
 
-  $font-size-mobile-punchline-1:  3.5rem;     // 42px
-  $font-size-mobile-punchline-2:  3rem;       // 36px
-  $font-size-mobile-punchline-3:  1.75rem;    // 21px
+  $font-size-mobile-display-1:  3.5rem;     // 42px
+  $font-size-mobile-display-2:  3rem;       // 36px
+  $font-size-mobile-display-3:  2.285rem;   // 32px
+  $font-size-mobile-display-4:  1.75rem;    // 25px
 
   // Desktop typography
   $font-size-desktop-base:  1rem;       // 16px
   $font-size-desktop-lg:    1.125rem;   // 18px
   $font-size-desktop-sm:    0.875rem;   // 14px
-  $font-size-desktop-xs:    0.750rem;    // 12px
+  $font-size-desktop-xs:    0.750rem;   // 12px
 
-  $font-size-desktop-h1:    2.250rem;   // 36px
-  $font-size-desktop-h2:    2.000rem;   // 32px
-  $font-size-desktop-h3:    1.500rem;   // 24px
-  $font-size-desktop-h4:    1.313rem;   // 21px
-  $font-size-desktop-h5:    1.125rem;   // 18px
-  $font-size-desktop-h6:    1.000rem;   // 16px
+  $font-size-desktop-h1:    2.50rem;    // 40px
+  $font-size-desktop-h2:    2.000rem;   // 36px
+  $font-size-desktop-h3:    2.000rem;   // 32px
+  $font-size-desktop-h4:    1.500rem;   // 24px
+  $font-size-desktop-h5:    1.313rem;   // 21px
+  $font-size-desktop-h6:    1.125rem;   // 18px
 
-  $font-size-desktop-punchline-1: 8.750rem;   // 140px
-  $font-size-desktop-punchline-2: 5.000rem;   // 80px
-  $font-size-desktop-punchline-3: 2.250rem;   // 36px
+  $font-size-desktop-display-1: 8.750rem;   // 140px
+  $font-size-desktop-display-2: 5.000rem;   // 80px
+  $font-size-desktop-display-3: 3.750rem;   // 60px
+  $font-size-desktop-display-4: 3.000rem;   // 44px
 
 /*  Colors */
   // brand colors
@@ -53,16 +55,25 @@
   $brand-green-light:   #b3ff00;
 
   $brand-turquoise:     #63c3d1;
-  $brand-gray-blue:     #577288;
-  $brand-red:           #ff4444;
-  $brand-orange:        #f39200;
-  $brand-blue:          #008ee8;
+  // $brand-turquoise-light:
 
-  $brand-gray-dark:      #141e28;
-  $brand-gray:           #323c46;
-  $brand-gray-light:     #8c96a0;
-  $brand-gray-lighter:   #e1e6eb;
-  $brand-gray-lightest:  #f0f2f5;
+  $brand-red:           #ff4444;
+  $brand-red-light:     #FFE4E4;
+
+  $brand-orange:        #f39200;
+  $brand-orange-light:  #FEEFD9;
+
+  $brand-blue:          #008ee8;
+  $brand-blue-light:    #D9EFFC;
+
+  $brand-gray-blue:     #577288;
+
+  $brand-gray-darker:    #141E28;
+  $brand-gray-dark:      #323C46;
+  $brand-gray:           #8C96A0;
+  $brand-gray-light:     #A0A5AA;
+  $brand-gray-lighter:   #E1E6EB;
+  $brand-gray-lightest:  #F0F2F5;
 
   //social
   $facebook:        #4065b4;
@@ -70,9 +81,10 @@
   $twitter:         #0693e3;
   $whatsapp:        #25d366;
 
-  $news-gradient: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0,0,0, 1));
-  $news-text-shadow: 1px 1px 1px rgba($brand-gray-dark, 0.5);
-  $entity-page-bg-gradient: linear-gradient(to bottom, rgba(240, 242, 245, 1) 0%, rgba(240, 242, 245, 0) 196px);  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  $brand-gradient-green: linear-gradient(to bottom, $brand-green-dark 0%,$brand-green 100%);
+  $brand-gradient-gray: linear-gradient(to bottom, $brand-gray-lightest 0%,#FFF 100%);
+  $brand-gradient-gray-inverse: linear-gradient(to top, $brand-gray-lightest 0%,#FFF 100%);
+
 
 /*  Extras */
   // Gutter space
@@ -84,121 +96,11 @@
   $nav-height-desktop: 4.285rem;
 
   // Border-radius
-  $border-radius-base: 6px;
+  $border-radius-base: 8px;
 
 /*  Spacing */
   // for more info refer to _spacing.scss
 
-  $base-spacing:             6px;
+  $base-spacing: 8px;
 
-  $spacing-mobile-xs:        $base-spacing;        // 6px
-  $spacing-mobile-sm:        $base-spacing;        // 6px
-  $spacing-mobile-md:        $base-spacing * 1.5;  // 9px
-  $spacing-mobile-lg:        $base-spacing * 2;    // 12px
-  $spacing-mobile-xl:        $base-spacing * 3;    // 18px
-  $spacing-mobile-xxl:       $base-spacing * 4;    // 24px
-  $spacing-mobile-xxxl:      $base-spacing * 6;    // 36px
-
-  $spacing-desktop-xs:       $base-spacing;
-  $spacing-desktop-sm:       $base-spacing * 1.5;  // 9px
-  $spacing-desktop-md:       $base-spacing * 2;    // 12px
-  $spacing-desktop-lg:       $base-spacing * 3;    // 18px
-  $spacing-desktop-xl:       $base-spacing * 4;    // 24px
-  $spacing-desktop-xxl:      $base-spacing * 6;    // 36px
-  $spacing-desktop-xxxl:     $base-spacing * 8;    // 48px
-
-  // setting array for mobile
-  $spacing-none:      0, 0;
-  $spacing-xs:        $spacing-mobile-xs, $spacing-desktop-xs;
-  $spacing-sm:        $spacing-mobile-sm, $spacing-desktop-sm;
-  $spacing-md:        $spacing-mobile-md, $spacing-desktop-md;
-  $spacing-lg:        $spacing-mobile-lg, $spacing-desktop-lg;
-  $spacing-xl:        $spacing-mobile-xl, $spacing-desktop-xl;
-  $spacing-xxl:       $spacing-mobile-xxl, $spacing-desktop-xxl;
-  $spacing-xxxl:      $spacing-mobile-xxxl, $spacing-desktop-xxxl;
-
-  $spacing-array:
-                      margin m-xs $spacing-xs,
-                      margin m-sm $spacing-sm,
-                      margin m-md $spacing-md,
-                      margin m-lg $spacing-lg,
-                      margin m-xl $spacing-xl,
-                      margin m-xxl $spacing-xxl,
-                      margin m-xxxl $spacing-xxxl,
-
-                      padding p-xs $spacing-xs,
-                      padding p-sm $spacing-sm,
-                      padding p-md $spacing-md,
-                      padding p-lg $spacing-lg,
-                      padding p-xl $spacing-xl,
-                      padding p-xxl $spacing-xxl,
-                      padding p-xxxl $spacing-xxxl,
-
-                      margin-top mt-xs $spacing-xs,
-                      margin-top mt-sm $spacing-sm,
-                      margin-top mt-md $spacing-md,
-                      margin-top mt-lg $spacing-lg,
-                      margin-top mt-xl $spacing-xl,
-                      margin-top mt-xxl $spacing-xxl,
-                      margin-top mt-xxxl $spacing-xxxl,
-
-                      margin-right mr-xs $spacing-xs,
-                      margin-right mr-sm $spacing-sm,
-                      margin-right mr-md $spacing-md,
-                      margin-right mr-lg $spacing-lg,
-                      margin-right mr-xl $spacing-xl,
-                      margin-right mr-xxl $spacing-xxl,
-                      margin-right mr-xxxl $spacing-xxxl,
-
-                      margin-bottom mb-xs $spacing-xs,
-                      margin-bottom mb-sm $spacing-sm,
-                      margin-bottom mb-md $spacing-md,
-                      margin-bottom mb-lg $spacing-lg,
-                      margin-bottom mb-xl $spacing-xl,
-                      margin-bottom mb-xxl $spacing-xxl,
-                      margin-bottom mb-xxxl $spacing-xxxl,
-
-                      margin-left ml-xs $spacing-xs,
-                      margin-left ml-sm $spacing-sm,
-                      margin-left ml-md $spacing-md,
-                      margin-left ml-lg $spacing-lg,
-                      margin-left ml-xl $spacing-xl,
-                      margin-left ml-xxl $spacing-xxl,
-                      margin-left ml-xxxl $spacing-xxxl,
-
-                      padding-top pt-xs $spacing-xs,
-                      padding-top pt-sm $spacing-sm,
-                      padding-top pt-md $spacing-md,
-                      padding-top pt-lg $spacing-lg,
-                      padding-top pt-xl $spacing-xl,
-                      padding-top pt-xxl $spacing-xxl,
-                      padding-top pt-xxxl $spacing-xxxl,
-
-                      padding-right pr-xs $spacing-xs,
-                      padding-right pr-sm $spacing-sm,
-                      padding-right pr-md $spacing-md,
-                      padding-right pr-lg $spacing-lg,
-                      padding-right pr-xl $spacing-xl,
-                      padding-right pr-xxl $spacing-xxl,
-                      padding-right pr-xxxl $spacing-xxxl,
-
-                      padding-bottom pb-xs $spacing-xs,
-                      padding-bottom pb-sm $spacing-sm,
-                      padding-bottom pb-md $spacing-md,
-                      padding-bottom pb-lg $spacing-lg,
-                      padding-bottom pb-xl $spacing-xl,
-                      padding-bottom pb-xxl $spacing-xxl,
-                      padding-bottom pb-xxxl $spacing-xxxl,
-
-                      padding-left pl-xs $spacing-xs,
-                      padding-left pl-sm $spacing-sm,
-                      padding-left pl-md $spacing-md,
-                      padding-left pl-lg $spacing-lg,
-                      padding-left pl-xl $spacing-xl,
-                      padding-left pl-xxl $spacing-xxl,
-                      padding-left pl-xxxl $spacing-xxxl;
-
-
-
-// Transitions
-$transition-default: all .350s ease;
+$transition-default: all .350s ease-in-out;

@@ -1,0 +1,93 @@
+// Mixins
+
+// Override Bootstrap button mixin
+@mixin button-variant($background, $border, $hover-background: darken($background, 8%), $hover-border: darken($border, 10%), $active-background: darken($background, 10%), $active-border: darken($border, 12.5%)) {
+  color: color-yiq($background);
+  @include gradient-bg($background);
+  border-color: $border;
+  @include box-shadow($btn-box-shadow);
+
+  @include hover {
+    color: color-yiq($background);
+    @include gradient-bg($hover-background);
+    // border-color: $hover-border;
+    border-color: $hover-background;
+  }
+
+  &:focus,
+  &.focus {
+    // Avoid using mixin so we can pass custom focus shadow properly
+    @if $enable-shadows {
+      box-shadow: $btn-box-shadow, 0 0 0 $input-btn-focus-width rgba($border, .5);
+    } @else {
+      box-shadow: 0 0 0 $input-btn-focus-width rgba($border, .5);
+    }
+  }
+
+  // Disabled comes first so active can properly restyle
+  // &.disabled,
+  // &:disabled {
+  //   background-color: $brand-gray-lighter;
+  //   color: $brand-gray;
+  //   border-color: $brand-gray-lighter;
+  //   opacity: .5;
+  // }
+
+  &:not([disabled]):not(.disabled):active,
+  &:not([disabled]):not(.disabled).active,
+  .show > &.dropdown-toggle {
+    color: color-yiq($background);
+    background-color: $active-background;
+    @if $enable-gradients {
+      background-image: none; // Remove the gradient for the pressed/active state
+    }
+    border-color: $active-border;
+
+    // Avoid using mixin so we can pass custom focus shadow properly
+    @if $enable-shadows {
+      box-shadow: $btn-active-box-shadow, 0 0 0 $input-btn-focus-width rgba($border, .5);
+    } @else {
+      box-shadow: 0 0 0 $input-btn-focus-width rgba($border, .5);
+    }
+  }
+}
+
+//////////////////////
+//////////////////////
+//////////////////////
+// button inverse
+
+@mixin button-outline-variant($color, $color-hover: #fff) {
+  color: $color;
+  background-color: $brand-gray-lightest;
+  border-color: $brand-gray-lightest;
+
+  @include hover {
+    color: darken($color, 8%);
+    background-color: $brand-gray-lighter;
+    border-color: $brand-gray-lighter;
+  }
+
+  &:focus,
+  &.focus {
+    box-shadow: 0 0 0 $input-btn-focus-width rgba($color, .5);
+  }
+
+  // &.disabled,
+  // &:disabled {
+  //   color: $brand-gray;
+  //   background-color: transparent;
+  //   border-color: $brand-gray-lighter;
+  //   opacity: .5;
+  // }
+
+  &:not([disabled]):not(.disabled):active,
+  &:not([disabled]):not(.disabled).active,
+  .show > &.dropdown-toggle {
+    color: darken($color, 8%);
+    background-color: $brand-gray-lighter;
+    border-color: $color;
+    // Avoid using mixin so we can pass custom focus shadow properly
+    box-shadow: 0 0 0 $input-btn-focus-width rgba($color, .5);
+  }
+}
