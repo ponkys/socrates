@@ -1,5 +1,9 @@
 // Onefootball variables
 
+// Paths
+$bootstrap-path: '../../node_modules/bootstrap/scss';
+$font-path: '../fonts';
+
 // fonts
   $font-default:  -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
   $font-brand:    'Onefootball Medium', $font-default;
@@ -36,8 +40,8 @@
   $font-size-desktop-sm:    0.875rem;   // 14px
   $font-size-desktop-xs:    0.750rem;   // 12px
 
-  $font-size-desktop-h1:    2.50rem;    // 40px
-  $font-size-desktop-h2:    2.000rem;   // 36px
+  $font-size-desktop-h1:    2.500rem;   // 40px
+  $font-size-desktop-h2:    2.250rem;   // 36px
   $font-size-desktop-h3:    2.000rem;   // 32px
   $font-size-desktop-h4:    1.500rem;   // 24px
   $font-size-desktop-h5:    1.313rem;   // 21px

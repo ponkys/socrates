@@ -1,14 +1,14 @@
-@font-face {
-  font-family: 'Onefootball Headline Medium';
-  src: url('../fonts/onefootball-headline-medium.woff') format('woff')
-}
+// @font-face {
+//   font-family: 'Onefootball Headline Medium';
+//   src: url('#{$font-path}/onefootball-headline-medium.woff') format('woff')
+// }
 
 @font-face {
   font-family: 'Onefootball Medium';
-  src: url('../fonts/onefootball-medium.woff') format('woff')
+  src: url('#{$font-path}/onefootball-medium.woff') format('woff')
 }
 
 @font-face {
   font-family: 'Onefootball Punchline';
-  src: url('../fonts/onefootball-punchline.woff') format('woff')
+  src: url('#{$font-path}/onefootball-punchline.woff') format('woff')
 }

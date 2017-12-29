@@ -29,6 +29,10 @@
 // 	}
 // }
 
+.rounded-lg {
+	border-radius: $border-radius-lg;
+}
+
 // scroll on mobile
 @include media-breakpoint-down(md) {
 	.container-scroll {
