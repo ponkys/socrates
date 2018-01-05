@@ -1,2 +1,6 @@
-@import "socrates-core";
-@import "socrates-product";
+// I included everything here just to be able to test all modules.
+@import "socrates-all";
+
+// Either include one of the following or build your own includes.
+// @import "socrates-core";
+// @import "socrates-product";

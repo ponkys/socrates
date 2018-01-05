@@ -1,0 +1,13 @@
+// Darken funtion
+// override default darken function in Sass to have different hover states based on a color's lightness value
+// more than or equal 45 -> darker
+// Less than 45 -> lighter
+
+@function darken($color, $ratio) {
+  @if lightness($color) >= 45% {
+    @return shade($color, $ratio)
+  }
+  @else {
+    @return tint($color, $ratio+2)
+  }
+}

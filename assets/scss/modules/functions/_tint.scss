@@ -1,0 +1,5 @@
+// tint funtion - Slightly lighten a color
+
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
