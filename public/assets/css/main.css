@@ -6311,34 +6311,44 @@ button.bg-danger:hover {
   color: #fff !important; }
 
 .text-primary {
-  color: #32b846 !important; }
+  color: #32b846 !important;
+  fill: #32b846 !important; }
 
 a.text-primary:focus, a.text-primary:hover {
-  color: #2da63f !important; }
+  color: #2da63f !important;
+  fill: #2da63f !important; }
 
 .text-success {
-  color: #32b846 !important; }
+  color: #32b846 !important;
+  fill: #32b846 !important; }
 
 a.text-success:focus, a.text-success:hover {
-  color: #2da63f !important; }
+  color: #2da63f !important;
+  fill: #2da63f !important; }
 
 .text-info {
-  color: #008ee8 !important; }
+  color: #008ee8 !important;
+  fill: #008ee8 !important; }
 
 a.text-info:focus, a.text-info:hover {
-  color: #0080d1 !important; }
+  color: #0080d1 !important;
+  fill: #0080d1 !important; }
 
 .text-warning {
-  color: #f39200 !important; }
+  color: #f39200 !important;
+  fill: #f39200 !important; }
 
 a.text-warning:focus, a.text-warning:hover {
-  color: #db8300 !important; }
+  color: #db8300 !important;
+  fill: #db8300 !important; }
 
 .text-danger {
-  color: #ff4444 !important; }
+  color: #ff4444 !important;
+  fill: #ff4444 !important; }
 
 a.text-danger:focus, a.text-danger:hover {
-  color: #e63d3d !important; }
+  color: #e63d3d !important;
+  fill: #e63d3d !important; }
 
 .text-muted {
   color: #A0A5AA !important; }
@@ -6502,40 +6512,52 @@ button.bg-white:hover {
   background: linear-gradient(to top, #F0F2F5 0%, #FFF 100%); }
 
 .text-primary-light {
-  color: #b3ff00 !important; }
+  color: #b3ff00 !important;
+  fill: #b3ff00 !important; }
 
 a.text-primary-light:focus, a.text-primary-light:hover {
-  color: #a1e600 !important; }
+  color: #a1e600 !important;
+  fill: #a1e600 !important; }
 
 .text-primary-dark {
-  color: #004c42 !important; }
+  color: #004c42 !important;
+  fill: #004c42 !important; }
 
 a.text-primary-dark:focus, a.text-primary-dark:hover {
-  color: #1f6159 !important; }
+  color: #1f6159 !important;
+  fill: #1f6159 !important; }
 
 .text-gray-blue {
-  color: #577288 !important; }
+  color: #577288 !important;
+  fill: #577288 !important; }
 
 a.text-gray-blue:focus, a.text-gray-blue:hover {
-  color: #6b8396 !important; }
+  color: #6b8396 !important;
+  fill: #6b8396 !important; }
 
 .text-gray-darker {
-  color: #141E28 !important; }
+  color: #141E28 !important;
+  fill: #141E28 !important; }
 
 a.text-gray-darker:focus, a.text-gray-darker:hover {
-  color: #303942 !important; }
+  color: #303942 !important;
+  fill: #303942 !important; }
 
 .text-gray-dark {
-  color: #323C46 !important; }
+  color: #323C46 !important;
+  fill: #323C46 !important; }
 
 a.text-gray-dark:focus, a.text-gray-dark:hover {
-  color: #4b535c !important; }
+  color: #4b535c !important;
+  fill: #4b535c !important; }
 
 .text-gray-light {
-  color: #A0A5AA !important; }
+  color: #A0A5AA !important;
+  fill: #A0A5AA !important; }
 
 a.text-gray-light:focus, a.text-gray-light:hover {
-  color: #909599 !important; }
+  color: #909599 !important;
+  fill: #909599 !important; }
 
 .text-lg {
   font-size: 1.166rem; }
@@ -6594,9 +6616,24 @@ a.text-gray-light:focus, a.text-gray-light:hover {
 
 .icon {
   vertical-align: middle;
+  display: inline-block;
   margin-right: 4px;
   width: 1em;
-  height: 1em; }
+  height: 1em;
+  position: relative;
+  top: -.1em; }
+
+.icon-lg {
+  width: 1.5em;
+  height: 1.5em; }
+
+.icon-2x {
+  width: 2em;
+  height: 2em; }
+
+.icon-3x {
+  width: 3em;
+  height: 3em; }
 
 .btn {
   cursor: pointer;

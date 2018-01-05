@@ -7,11 +7,22 @@
 
     <link rel="stylesheet" href="{{ path '/assets/css/main.css' }}">
 
+    <script type="text/javascript" src="{{path '/assets/js/svg-injector.min.js'}}"></script>
+
     <title>{{ _target.title }} | {{ _config.project.title }}</title>
 </head>
 <body>
 
 {{{ yield }}}
+
+{{!-- injecting inline svg --}}
+<script type="text/javascript">
+  // Elements to inject
+  var mySVGsToInject = document.querySelectorAll('.inject-me');
+  console.log(mySVGsToInject);
+  // Do the injection
+  SVGInjector(mySVGsToInject);
+  </script>
 
 </body>
 </html>

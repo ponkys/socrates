@@ -2,6 +2,21 @@
 
 .icon {
 	vertical-align: middle;
+	display: inline-block;
 	margin-right: $spacer/2;
 	@include size(1em);
+	position: relative;
+	top: -.1em;
+}
+
+.icon-lg {
+	@include size(1.5em);
+}
+
+.icon-2x {
+	@include size(2em);
+}
+
+.icon-3x {
+	@include size(3em);
 }
