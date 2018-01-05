@@ -1,0 +1,61 @@
+{{!-- icon --}}
+
+<script type="text/javascript" src="{{path '/assets/js/svg-injector.min.js'}}"></script>
+
+<div class="container my-5">
+	<div class="row">
+		<div class="col-24">
+			<div class="alert alert-primary">
+				<strong class="text-lg">No Bootstrap Docs for icons</a></strong>
+			</div>
+		</div>
+		<div class="col-24 mt-xl">
+			<p class="text-info mt-4"><strong>— Icons</strong></p>
+
+			<div class="row mt-4">
+				<div class="col-12 col-xl-4 mb-4">
+					<div class="elevated-2 p-4 rounded-lg">
+						<img class="inject-me mx-auto d-block" src="{{path '/assets/img/ic_chevron_right_24px.svg' }}" />
+						<p class="text-center mt-2 mb-0">Chevron right</p>
+					</div>
+				</div>
+				<div class="col-12 col-xl-4 mb-4">
+					<div class="elevated-2 p-4 rounded-lg">
+						<img class="inject-me mx-auto d-block" src="{{path '/assets/img/ic_chevron_left_24px.svg' }}" />
+						<p class="text-center mt-2 mb-0">Chevron left</p>
+					</div>
+				</div>
+				<div class="col-12 col-xl-4 mb-4">
+					<div class="elevated-2 p-4 rounded-lg">
+						<img class="inject-me mx-auto d-block" src="{{path '/assets/img/ic_warning_24px.svg' }}" />
+						<p class="text-center mt-2 mb-0">Warning</p>
+					</div>
+				</div>
+				<div class="col-12 col-xl-4 mb-4">
+					<div class="elevated-2 p-4 rounded-lg">
+						<img class="inject-me mx-auto d-block" src="{{path '/assets/img/ic_close_24px.svg' }}" />
+						<p class="text-center mt-2 mb-0">Close</p>
+					</div>
+				</div>
+
+				<div class="col-12 col-xl-4 mb-4">
+					<div class="elevated-2 p-4 rounded-lg">
+						<img class="inject-me mx-auto d-block" src="{{path '/assets/img/ic_search_24px.svg' }}" />
+						<p class="text-center mt-2 mb-0">Search</p>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+</div>
+
+{{!-- injecting inline svg --}}
+<script type="text/javascript">
+  // Elements to inject
+  var mySVGsToInject = document.querySelectorAll('.inject-me');
+  console.log(mySVGsToInject);
+  // Do the injection
+  SVGInjector(mySVGsToInject);
+  </script>

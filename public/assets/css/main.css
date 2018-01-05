@@ -11373,6 +11373,12 @@ a.text-gray-light:focus, a.text-gray-light:hover {
 .text-bold {
   font-weight: 700; }
 
+.icon {
+  vertical-align: middle;
+  margin-right: 4px;
+  width: 1em;
+  height: 1em; }
+
 .btn {
   cursor: pointer;
   padding-left: 2rem;
