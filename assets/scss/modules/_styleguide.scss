@@ -5,7 +5,7 @@ $bootstrap-path: '../../node_modules/bootstrap/scss';
 $font-path: '../fonts';
 
 // fonts
-  $font-default:  -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+  $font-default:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
   $font-brand:    'Onefootball Medium', $font-default;
   $font-punchline: 'Onefootball Punchline', $font-brand;
 
