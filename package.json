@@ -1,5 +1,5 @@
 {
-  "name": "socrates",
+  "name": "socrates-css",
   "version": "0.1.1",
   "dependencies": {
     "@frctl/fractal": "^1.1.5",

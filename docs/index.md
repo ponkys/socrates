@@ -15,33 +15,20 @@ It includes the following main packages:
 ### Module Status
 - Typography `Done`
 - Colors `Done`
+- Gradients `Done`
+- Grid `In Progress`
 - Spacing `Done`
-- Icons `NOT DONE`
+- Icons `In Progress`
 - Shadows `Done`
 - Buttons `Done`
 - Forms `Done`
 - Badges `Done`
-- Alerts `In Progress`
-- Text Image `In Progress`
-- Card `NOT DONE`
-- Collection `NOT DONE`
+- Alerts `DONE`
 
 ### Usage
-- I'm still working on distribution but for now please copy the `assets/scss` into your project
-- as an example, just import the package you want inside your main Scss file
 
-```scss
-@import "_socrates-core.scss";
-```
-
-### What's next?
-- There are few modules that I'm still working on.
-- Any module requests are welcome.
-- Project distribution, I've no idea how to do it properly via `npm`
+- open your terminal and write `npm i socrates-css`
+- import the package you want inside your main Scss file like `@import "_socrates-core.scss";`
 
 ### Who to ask
 Please feel free to ask @zeroxme any questions or give feedback because the project is still in `Beta`
-
-```
-Email: zero@onefootball.com
-```

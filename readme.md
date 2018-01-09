@@ -25,14 +25,7 @@ It includes the following main packages:
 - Buttons `Done`
 - Forms `Done`
 - Badges `Done`
-- Alerts `In Progress`
-- Tabs `NOT DONE`
-- Navbar `NOT DONE`
-- Avatars `NOT DONE`
-- Utilities `In Progress`
-- Text Image `In Progress`
-- Card `NOT DONE`
-- Collection `NOT DONE`
+- Alerts `DONE`
 
 ### Install & Run the docs
 - clone this repo
@@ -42,12 +35,9 @@ It includes the following main packages:
 - to recompile Scss `gulp css:process`
 
 ### Usage
-- I'm still working on distribution but for now please copy the `assets/scss` into your project
-- as an example, just import the package you want inside your main Scss file
 
-```scss
-@import "_socrates-core.scss";
-```
+- open your terminal and write `npm i socrates-css`
+- import the package you want inside your main Scss file like `@import "_socrates-core.scss";`
 
 ### What's next?
 - There are few modules that I'm still working on.
@@ -56,7 +46,3 @@ It includes the following main packages:
 
 ### Who to ask
 Please feel free to ask @zeroxme any questions or give feedback because the project is still in `Beta`
-
-```
-Email: zero@onefootball.com
-```
