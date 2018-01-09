@@ -12,6 +12,5 @@ html, body {
 }
 
 a, svg {
-  text-decoration: none !important;
   @include transition($transition-default);
 }

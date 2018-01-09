@@ -6,29 +6,6 @@
 	flex-grow: 1;
 }
 
-.alert-info {
-	@include alert-variant($brand-blue-light, $brand-blue-light, $brand-blue);
-}
-
-.alert-danger {
-	@include alert-variant($brand-red-light, $brand-red-light, $brand-red);
-}
-
-.alert-warning {
-	@include alert-variant($brand-orange-light, $brand-orange-light, $brand-orange);
-}
-
-.alert-primary {
-	@include alert-variant($brand-green-light, $brand-green-light, $brand-green-dark);
-}
-
-// .elevated-hover {
-// 	@include transition($transition-default);
-// 	&.elevated:hover {
-// 		box-shadow: 0 9px 18px 0 rgba(black, 0.18);
-// 	}
-// }
-
 .rounded-lg {
 	border-radius: $border-radius-lg;
 }
@@ -70,22 +47,6 @@
 	overflow: hidden;
 }
 
-.square {
-	&.square-xs { @include size(12px); }
-	&.square-sm { @include size(18px); }
-	&.square-md { @include size(24px); }
-	&.square-lg { @include size(30px); }
-	&.square-xl { @include size(48px); }
-
-	@include media-breakpoint-up(xl) {
-		&.square-lg-xs { @include size(18px); }
-		&.square-lg-sm { @include size(24px); }
-		&.square-lg-md { @include size(36px); }
-		&.square-lg-lg { @include size(48px); }
-		&.square-lg-xl { @include size(72px); }
-	}
-}
-
 .rect {
 	position: relative;
 	display: block;
@@ -115,9 +76,4 @@
 			padding-bottom: 100%;
 		}
 	}
-}
-
-.icon-default {
-	height: 1em;
-	width: auto;
 }

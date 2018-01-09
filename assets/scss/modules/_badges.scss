@@ -1,5 +1,5 @@
 // Badges
 
-.badge-white {
-	@include badge-variant(white);
+.badge-secondary {
+	@include badge-variant($brand-gray-darker);
 }

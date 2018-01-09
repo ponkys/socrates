@@ -30,7 +30,7 @@
 @import "../../node_modules/bootstrap/scss/pagination";
 @import "../../node_modules/bootstrap/scss/badge";
 @import "../../node_modules/bootstrap/scss/jumbotron";
-@import "../../node_modules/bootstrap/scss/alert";
+// @import "../../node_modules/bootstrap/scss/alert"; Replaced by a complete custom version
 @import "../../node_modules/bootstrap/scss/progress";
 @import "../../node_modules/bootstrap/scss/media";
 @import "../../node_modules/bootstrap/scss/list-group";
@@ -51,4 +51,5 @@
 @import 'modules/buttons';
 @import 'modules/badges';
 @import 'modules/forms';
+@import 'modules/alerts';
 @import 'modules/utilities';

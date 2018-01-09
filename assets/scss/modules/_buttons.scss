@@ -1,7 +1,10 @@
 .btn {
 	cursor: pointer;
-	padding-left: 2rem; // 32
-	padding-right: 2rem; // 32
+
+	&.dropdown-toggle-split {
+		padding-left: 1rem;
+		padding-right: 1.2rem;
+	}
 
 	&.disabled,
 	&:disabled {
@@ -12,15 +15,6 @@
     opacity: .5;
 	}
 
-	&.btn-lg {
-		padding-left: $input-btn-padding-y-lg * 3; // 48
-		padding-right: $input-btn-padding-y-lg * 3; // 48
-	}
-	&.btn-sm {
-		padding-left: $input-btn-padding-x-sm * 2; // 16
-		padding-right: $input-btn-padding-x-sm * 2; // 16
-	}
-
 	&.elevated-hover {
 		&:hover {
 			transform: translateY(-2px);
@@ -29,6 +23,11 @@
 }
 
 // Custom buttons
+.btn-secondary {
+	// @include button-outline-variant($brand-gray-darker, $white);
+	@include button-variant($brand-gray-lightest, $brand-gray-lightest);
+}
+
 .btn-primary-dark {
 	@include button-variant($brand-green-dark, $brand-green-dark);
 }
@@ -37,9 +36,7 @@
 	@include button-variant($brand-green-light, $brand-green-light);
 }
 
-.btn-gray-lighter {
-	@include button-variant($brand-gray-lighter, $brand-gray-lighter);
-}
+// third party social media buttons
 
 .btn-facebook {
 	@include button-variant($facebook, $facebook);
@@ -47,4 +44,15 @@
 
 .btn-twitter {
 	@include button-variant($twitter, $twitter);
+}
+
+// needs further testing
+.btn-group,
+.btn-group-vertical {
+  .btn + .btn,
+  .btn + .btn-group,
+  .btn-group + .btn,
+  .btn-group + .btn-group {
+    margin-left: 2px;
+  }
 }

@@ -1,0 +1,22 @@
+// Override Bootstrap's default badge mixin
+
+@mixin badge-variant($color) {
+  color: $color;
+  @if $color == $brand-gray-darker {
+    background-color: $brand-gray-lightest;
+  }
+  @else {
+    background-color: tint($color, 90%);
+  }
+  // background-color: $brand-gray-lightest;
+  // @include gradient-bg($color);
+
+  &[href] {
+    @include hover-focus {
+      color: color-yiq($color);
+      text-decoration: none;
+      // background-color: darken($color, 10%);
+      background-color: $brand-gray-lightest;
+    }
+  }
+}
