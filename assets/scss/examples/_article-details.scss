@@ -1,0 +1,51 @@
+// for news details
+
+.article-img {
+	@include media-breakpoint-up(sm) {
+		border-radius: $border-radius-lg;
+	}
+}
+
+.article-circle {
+	z-index: -1;
+	left: -$spacer * 3;
+	top: -$spacer * 1.5;
+	@include size(4rem);
+
+	@include media-breakpoint-up(lg) {
+		@include size(5rem);
+		left: -$spacer * 4;
+	}
+}
+
+.article-separator {
+	width: 30vw;
+	height: $spacer / 2;
+
+	@include media-breakpoint-up(sm) {
+		width: 20vw;
+	}
+
+	@include media-breakpoint-up(lg) {
+		width: 16vw;
+		height: $spacer;
+	}
+}
+
+.article-separator-left {
+	left: -$spacer / 2;
+	bottom: -$spacer * 2;
+
+	@include media-breakpoint-up(sm) {
+		left: -$spacer * 3;
+	}
+
+	@include media-breakpoint-up(lg) {
+		left: -$spacer * 5;
+		bottom: -$spacer * 3;
+	}
+}
+
+twitterwidget {
+	@extend .mx-auto; // twitter embed is really strange
+}
