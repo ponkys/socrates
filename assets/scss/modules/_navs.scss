@@ -1,0 +1,27 @@
+// Navs
+
+.nav-pills {
+	box-shadow: inset 0 -1px 0 $brand-gray-lighter;
+	.nav-link {
+		color: $brand-gray;
+		border-radius: 0;
+		border-bottom: $spacer/4 solid transparent;
+
+		@include hover {
+			color: $brand-gray-dark;
+			border-bottom-color: $brand-gray-lighter;
+		}
+
+		&.active {
+			background-color: transparent;
+			color: $brand-gray-darker;
+			border-bottom-color: $brand-green;
+		}
+		&.disabled {
+			pointer-events: none;
+			color: $brand-gray;
+			opacity: .5;
+		}
+	}
+
+}
