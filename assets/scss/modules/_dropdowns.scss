@@ -1,0 +1,13 @@
+// Dropdown
+
+.dropdown-menu {
+	@extend .elevated-3;
+
+	& .icon {
+		margin-left: $spacer;
+	}
+}
+
+.dropdown-item {
+	font-weight: $font-semibold;
+}
