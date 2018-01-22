@@ -1,0 +1,17 @@
+// Sizes
+
+.size-lg {
+	@include size(1.3em);
+}
+
+.size-2 {
+	@include size(2em);
+}
+
+.size-3 {
+	@include size(3em);
+}
+
+.size-4 {
+	@include size(4em);
+}
