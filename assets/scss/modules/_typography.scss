@@ -1,9 +1,10 @@
 // Typography
 
-.text-lg { font-size: 	$font-size-mobile-lg }
-.text-base { font-size: $font-size-mobile-base }
-.text-sm { font-size: 	$font-size-mobile-sm }
-.text-xs { font-size:   $font-size-mobile-xs }
+.text-article { font-size: $font-size-mobile-article; }
+.text-lg { font-size: 	   $font-size-mobile-lg }
+.text-base { font-size:    $font-size-mobile-base }
+.text-sm { font-size: 	   $font-size-mobile-sm }
+.text-xs { font-size:      $font-size-mobile-xs }
 
 @include media-breakpoint-up(lg) {
 
@@ -19,10 +20,12 @@
   .display-3 { font-size: $font-size-desktop-display-3; }
   .display-4 { font-size: $font-size-desktop-display-4; }
 
-  .text-lg { font-size: 	$font-size-desktop-lg }
-  .text-base { font-size: $font-size-desktop-base }
-  .text-sm { font-size: 	$font-size-desktop-sm }
-  .text-xs { font-size:   $font-size-desktop-xs }
+  .lead         { font-size: $font-size-desktop-lead; }
+  .text-article { font-size: $font-size-desktop-article; }
+  .text-lg      { font-size: $font-size-desktop-lg }
+  .text-base    { font-size: $font-size-desktop-base }
+  .text-sm      { font-size: $font-size-desktop-sm }
+  .text-xs      { font-size: $font-size-desktop-xs }
 }
 
 // Utilities
@@ -33,13 +36,20 @@
 
 .font-punchline {
   font-family: $font-punchline;
+  font-weight: $font-regular;
 }
 
 .display-1, .display-2, .display-3, .display-4 {
-  letter-spacing: -0.05rem;
+  letter-spacing: -0.04rem;
   line-height: 0.85;
 }
 
-.line-height-lg {
-  line-height: $line-height-lg;
-}
+.line-height-sm { line-height: $line-height-sm; }
+.line-height-lg { line-height: $line-height-lg; }
+
+.font-weight-light { font-weight:   $font-light; }   // 400
+.font-weight-regular { font-weight:   $font-regular; }   // 400
+.font-weight-medium { font-weight:    $font-medium; }    // 500 -> buttons and dropdowns
+.font-weight-semibold { font-weight:  $font-semibold; }  // 600 -> heading
+.font-weight-bold { font-weight:      $font-bold; }      // 700
+.font-weight-heavy { font-weight:     $font-heavy; }     // 900 -> news details heading
