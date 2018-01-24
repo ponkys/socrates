@@ -3,9 +3,13 @@
 .dropdown-menu {
 	@extend .elevated-3;
 
-	& .icon {
-		margin-left: $spacer;
-	}
+	// .navbar & {
+	// 	position: absolute;
+	// }
+
+	// & .icon {
+	// 	margin-left: $spacer; // needs review
+	// }
 }
 
 .dropdown-item {

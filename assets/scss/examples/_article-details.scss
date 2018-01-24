@@ -46,6 +46,12 @@
 	}
 }
 
+.article-bar {
+	border-top-right-radius: $border-radius-lg;
+	border-top-left-radius: $border-radius-lg;
+	box-shadow: 0 -8px 32px -4px rgba($brand-gray-darker,.08);
+}
+
 twitterwidget {
 	@extend .mx-auto; // twitter embed is really strange
 }
