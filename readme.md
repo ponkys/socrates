@@ -6,7 +6,7 @@
 
 Socrates is the design system that powers Onefootball web projects
 
-It's a custom version of Bootstrap, so to run it, Bootstrap has to be included in your dependancies
+It's a custom version of Bootstrap, so to run it, Bootstrap has to be included in your dependencies
 
 It includes the following main packages:
 
@@ -36,13 +36,12 @@ It includes the following main packages:
 
 ### Usage
 
-- open your terminal and write `npm i socrates-css`
+- open your terminal and write `npm i socrates-css --save`
 - import the package you want inside your main Scss file like `@import "_socrates-core.scss";`
 
 ### What's next?
 - There are few modules that I'm still working on.
 - Any module requests are welcome.
-- Project distribution, I've no idea how to do it properly via `npm`
 
 ### Who to ask
 Please feel free to ask @zeroxme any questions or give feedback because the project is still in `Beta`
