@@ -1,10 +1,15 @@
 // Extras
 
 
-// flexbos utils
-.flex-grow {
-	flex-grow: 1;
+// keep foot at the bottom of an short page
+.socrates-main {
+	min-height: 100vh;
 }
+
+.socrates-content {
+	flex: 1;
+}
+// keep foot at the bottom of an short page
 
 .rounded-lg {
 	border-radius: $border-radius-lg;
