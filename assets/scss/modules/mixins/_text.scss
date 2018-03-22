@@ -9,7 +9,9 @@
 	a#{$parent} {
 		@include hover-focus {
 			color: darken($color, 10%) !important;
-			fill: darken($color, 10%) !important;
+			svg {
+				fill: darken($color, 20%) !important;
+			}
 		}
 	}
 }
