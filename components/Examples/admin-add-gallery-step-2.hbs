@@ -1,0 +1,105 @@
+{{!-- Admin --}}
+
+{{> @navbar-admin className="sticky-top" }}
+
+<div class="socrates-content">
+
+	<div class="container pt-4">
+		<div class="row">
+			<div class="col-24 mt-4">
+				<div class="d-flex">
+					<div class="avatar mt-2 size-5 mr-4" style="background-image: url(https://images.onefootball.com/default_gallery-icon.png);"></div>
+					<div>
+						<h1 class="font-weight-bold">Trending News Gallery</h1>
+						<p class="text-muted">Curated by Onefootball Team</p>
+					</div>
+					<div class="ml-auto align-self-center">
+						<div class="btn-group mt-2" role="group" aria-label="Basic example">
+							<button type="button" class="btn btn-outline-danger">Delete</button>
+							<button type="button" class="btn btn-primary">Publish</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-24 mt-7">
+				<div class="d-flex mb-3">
+					<dt class="h4 text-info">— Information and targeting:</dt>
+					<div class="ml-auto align-self-center">
+						<a href="#" class="btn btn-outline-info btn-sm float-right">Edit information</a>
+					</div>
+				</div>
+				<div class="border p-4 rounded-lg">
+					<dl class="row m-0">
+					  <dt class="col-sm-3">Market:</dt>
+					  <dd class="col-sm-9">German</dd>
+					  <dt class="col-sm-3">ID:</dt>
+					  <dd class="col-sm-9">18274162</dd>
+					  <dt class="col-sm-3">Type:</dt>
+					  <dd class="col-sm-9">Video</dd>
+					  <dt class="col-sm-3">Direction:</dt>
+					  <dd class="col-sm-9">Vertical</dd>
+					  <dt class="col-sm-3">Entity:</dt>
+					  <dd class="col-sm-9 mb-0">-</dd>
+					  <dt class="col-sm-3">Push link:</dt>
+					  <dd class="col-sm-9 mb-0">
+					  	<a href="#" class="text-success" data-toggle="tooltip" data-placement="top" title="Click to copy">
+					  		onefootball://editorial/18274162?language=de
+					  		<img class="text-success inject-me icon size-lg" src="{{path '/assets/img/icons/ic_content_copy_24px.svg' }}" />
+					  	</a>
+					  </dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	{{> @admin-import-content}}
+
+	<div class="container mt-7">
+		<div class="row">
+			<div class="col-24">
+				<div class="d-flex mb-3">
+					<h4 class="text-info">— Gallery Content
+						<span class="text-info">
+							<img class="inject-me icon text-info" src="{{path '/assets/img/icons/ic_dot_24px.svg' }}" />
+						</span>
+						<small class="text-gray-light">3 items</small>
+					</h4>
+					<div class="ml-auto align-self-center">
+						<a href="#" class="btn btn-outline-danger btn-sm float-right" data-toggle="modal" data-target="#modal-alert">Remove all content</a>
+					</div>
+				</div>
+			</div>
+		</div>
+				{{!-- <div class="border rounded-lg px-4 py-2">
+					<div class="row">
+						<div class="col-sm-16">
+							Item information
+						</div>
+						<div class="col-sm-2 text-center">
+							Link
+						</div>
+						<div class="col-sm-2 text-center">
+							Edit
+						</div>
+						<div class="col-sm-2 text-center">
+							Remove
+						</div>
+						<div class="col-sm-2 text-center">
+							Move
+						</div>
+					</div>
+				</div>
+			</div> --}}
+
+			{{> @admin-content-item}}
+			{{> @admin-content-item}}
+			{{> @admin-content-item}}
+		</div>
+	</div>
+
+</div> {{!-- /.socrates-content --}}
+
+{{> @footer-admin }}
+
+{{> @modal-alert id="modal-alert" }}
