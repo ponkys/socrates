@@ -8,11 +8,7 @@
 
 	&.disabled,
 	&:disabled {
-		pointer-events: none;
-	  background-color: $brand-gray-lighter;
-    color: $brand-gray;
-    border-color: $brand-gray-lighter;
-    opacity: .5;
+		@extend %disabled;
 	}
 
 	&.elevated-hover {
