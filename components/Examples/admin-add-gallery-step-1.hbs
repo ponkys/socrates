@@ -26,23 +26,23 @@
 				<form action="">
 					<div class="form-group row mt-5">
 						<label for="inputName" class="col-sm-4 col-form-label">Name</label>
-						<div class="col-sm-16">
+						<div class="col-sm-18">
 							<input type="text" class="form-control" id="inputName" placeholder="Top News or Entity Name">
 						</div>
 					</div>
-					<div class="form-group row mt-5">
-						<label for="inputContext" class="col-sm-4 col-form-label">Contextual message</label>
-						<div class="col-sm-16">
+					{{!-- <div class="form-group row mt-5">
+						<label class="col-sm-4 col-form-label">Contextual message</label>
+						<div class="col-sm-18">
 							<input type="text" class="form-control" id="inputContext" placeholder="e.g. Curatd by Onefootball Team">
 							<p id="inputDesc" class="text-sm form-text text-warning">
 								<img class="inject-me mx-auto icon size-lg text-warning" src="{{path '/assets/img/icons/ic_warning_24px.svg' }}" />
 								Leave it empty if it's for a followed entity or it will fallback to a predefined message
 							</p>
 						</div>
-					</div>
+					</div> --}}
 					<div class="form-group row mt-5">
 						<label for="inputDesc" class="col-sm-4 col-form-label">Description</label>
-						<div class="col-sm-16">
+						<div class="col-sm-18">
 							<textarea class="form-control" name="" placeholder="in few words what is this gallery all about"></textarea>
 							<p id="inputDesc" class="text-sm form-text text-info">
 								<img class="inject-me mx-auto icon size-lg text-info" src="{{path '/assets/img/icons/ic_info_24px.svg' }}" />
@@ -53,7 +53,7 @@
 {{!-- 					for a later version
 					<div class="form-group row mt-5">
 						<label for="inputSelect3" class="col-sm-4 col-form-label">Direction</label>
-						<div class="col-sm-16">
+						<div class="col-sm-18">
 							<select name="" id="" class="form-control">
 								<option value="Vertical">Vertical Gallery</option>
 								<option value="Horizontal">Horizontal Gallery</option>
@@ -71,78 +71,30 @@
 
 					<fieldset class="form-group mt-5">
 						<div class="row">
-							<label for="inputContext" class="col-sm-4 col-form-label pt-0">Type of Content</label>
-							<div class="col-sm-16">
-								<div class="custom-control custom-radio">
+							<label class="col-sm-4 col-form-label pt-0">Type of Content</label>
+							<div class="col-sm-18">
+								<div class="custom-control custom-radio d-inline-block">
 									<input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-									<label class="custom-control-label" for="customRadio1">News</label>
+									<label class="custom-control-label" for="customRadio1">News Topic Gallery</label>
 								</div>
-
-								<div class="form-inline mt-5 offset-sm-2">
-
-									<div class="custom-control custom-radio mr-4" data-toggle="tooltip" data-placement="top" title="Valid for ONE entity">
-										<input type="radio" id="customRadio3-3" name="NewsContentType" class="custom-control-input">
-										<label class="custom-control-label" for="customRadio3-3">Entity Official Gallery</label>
-									</div>
-
-									<div class="custom-control custom-radio" data-toggle="tooltip" data-placement="top" title="Can attach multiple entities">
-										<input type="radio" id="customRadio3-1" name="NewsContentType" class="custom-control-input">
-										<label class="custom-control-label" for="customRadio3-1">Topic Gallery</label>
-									</div>
-
-									{{!-- <p id="inputDesc" class="d-flex text-sm form-text mt-3 mb-0 text-warning">
-										<img class="inject-me mx-auto icon size-lg text-warning align-self-center" src="{{path '/assets/img/icons/ic_warning_24px.svg' }}" />
-										<span class="ml-2">
-											Official Gallery positioning will be done automatic by the system <br />
-											Topic Gallery has manual positioning
-										</span>
-									</p> --}}
-
-								</div>
-
-								{{!-- <div class="mt-5 offset-sm-2">
-
-									<input type="text" class="form-control col-18 mr-4" placeholder="Search for Entity" />
-
-									<div class="row mt-4 no-gutters">
-										<div class="col-16 align-self-center">
-											<h5 class="m-0">
-												<img src="https://images.onefootball.com/icons/teams/164/263.png" class="size-2 mr-3" />Paris SG
-												<span class="badge badge-info badge-pill ml-2">Official</span>
-											</h5>
-										</div>
-										<div class="col-sm-2 align-self-center">
-											<a href="#" class="text-danger">
-												<img class="inject-me icon size-lg ml-auto d-block" src="{{path '/assets/img/icons/ic_close_circle_24px.svg' }}" data-toggle="tooltip" data-placement="top" title="Remove Entity" />
-											</a>
-										</div>
-									</div>
-
-									<div class="row mt-4 no-gutters">
-										<div class="col-16 align-self-center">
-											<h5 class="m-0">
-												<img src="https://images.onefootball.com/icons/teams/164/5.png" class="size-2 mr-3" />Barcelona
-											</h5>
-										</div>
-										<div class="col-sm-2 align-self-center">
-											<a href="#" class="text-danger">
-												<img class="inject-me icon size-lg ml-auto d-block" src="{{path '/assets/img/icons/ic_close_circle_24px.svg' }}" data-toggle="tooltip" data-placement="top" title="Remove Entity" />
-											</a>
-										</div>
-									</div>
-
-								</div> --}}
 
 								<hr class="my-5" />
 
-								<div class="custom-control custom-radio">
+								<div class="custom-control custom-radio d-inline-block mr-4" data-toggle="tooltip" data-placement="top" title="Valid for ONE entity">
+									<input type="radio" id="customRadio3-3" name="customRadio" class="custom-control-input">
+									<label class="custom-control-label" for="customRadio3-3">Entity News Official Gallery</label>
+								</div>
+
+								<hr class="my-5" />
+
+								<div class="custom-control custom-radio d-inline-block">
 									<input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
 									<label class="custom-control-label" for="customRadio3">Video</label>
 								</div>
 
 								<hr class="my-5" />
 
-								<div class="custom-control custom-radio">
+								<div class="custom-control custom-radio d-inline-block">
 									<input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
 									<label class="custom-control-label" for="customRadio2">Match</label>
 								</div>
@@ -161,9 +113,9 @@
 					</div>
 
 					<div class="form-group row mt-5">
-						<label for="inputContext" class="col-sm-4 col-form-label">Language</label>
-						<div class="col-sm-16">
-							<select name="" id="" class="form-control">
+						<label class="col-sm-4 col-form-label">Language</label>
+						<div class="col-sm-18">
+							<select class="form-control">
 								<option>Language</option>
 								<option value="">English</option>
 								<option value="">German</option>
@@ -174,11 +126,11 @@
 					</div>
 
 					<div class="form-group row mt-5">
-						<label for="inputContext" class="col-sm-4 col-form-label">Position</label>
-						<div class="col-sm-16">
+						<label class="col-sm-4 col-form-label">Publish to</label>
+						<div class="col-sm-18">
 							<div class="custom-control custom-radio">
 								<input type="radio" id="positionRadio1" name="PositionRadio" class="custom-control-input">
-								<label class="custom-control-label" for="positionRadio1">Manual</label>
+								<label class="custom-control-label" for="positionRadio1">Language Only</label>
 							</div>
 
 							<div class="form-inline mt-4">
@@ -189,7 +141,7 @@
 									<option value="">After Followed teams area — Rank 5</option>
 								</select>
 								<select name="" id="" class="col form-control">
-									<option>Index within the selected Area</option>
+									<option>Index inside selected Area</option>
 									<option value="">Rank #1</option>
 									<option value="">Rank #3</option>
 									<option value="">Rank #5</option>
@@ -200,7 +152,63 @@
 
 							<div class="custom-control custom-radio">
 								<input type="radio" id="positionRadio2" name="PositionRadio" class="custom-control-input">
-								<label class="custom-control-label" for="positionRadio2">Entity Relationship <span class="text-muted">(Favourite / Follow)</span></label>
+								<label class="custom-control-label" for="positionRadio2">Team<span class="text-muted"> (Favourite / Follow)</span></label>
+							</div>
+
+							<div class="mt-4 col-24">
+								<div class="row">
+									{{!-- <select name="" id="" class="col-sm-10 form-control">
+										<option>Pick a Language</option>
+										<option value="">English</option>
+										<option value="">German</option>
+										<option value="">Italian</option>
+										<option value="">Spanish</option>
+									</select> --}}
+
+									<div class="col-sm-14">
+										<div class="input-group">
+											<div class="input-group-prepend">
+												<span class="input-group-text" id="inputGroupPrepend3">
+													<img class="inject-me size-lg ml-auto d-block" src="{{path '/assets/img/icons/ic_search_24px.svg' }}" />
+												</span>
+											</div>
+											<input type="text" class="form-control" placeholder="Search for Entity" />
+										</div>
+
+										<div class="row mt-4 no-gutters">
+											<div class="col-22 align-self-center">
+												<h5 class="m-0">
+													<img src="https://images.onefootball.com/icons/teams/164/263.png" class="size-2 mr-3" />Paris SG
+													<span class="badge badge-info badge-pill ml-2">Official</span>
+												</h5>
+											</div>
+											<div class="col-sm-2 align-self-center">
+												<a href="#" class="text-danger">
+													<img class="inject-me icon size-lg ml-auto d-block" src="{{path '/assets/img/icons/ic_close_circle_24px.svg' }}" data-toggle="tooltip" data-placement="top" title="Remove Entity" />
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								{{!-- <p id="inputDesc" class="m-0 text-sm form-text text-info col-auto">
+									<img class="inject-me mx-auto icon size-lg text-info" src="{{path '/assets/img/icons/ic_info_24px.svg' }}" />
+									Official Gallery positioning will be done automatic by the system
+								</p> --}}
+							</div>
+
+							<hr class="my-5" />
+
+							<div class="custom-control custom-radio">
+								<input type="radio" id="positionRadio22222" name="PositionRadio" class="custom-control-input">
+								<label class="custom-control-label" for="positionRadio22222">Competition<span class="text-muted"> (Favourite / Follow)</span></label>
+							</div>
+
+							<hr class="my-5" />
+
+							<div class="custom-control custom-radio">
+								<input type="radio" id="positionRadio2233" name="PositionRadio" class="custom-control-input">
+								<label class="custom-control-label" for="positionRadio2233">Player<span class="text-muted"> (Follow)</span></label>
 							</div>
 
 						</div>
