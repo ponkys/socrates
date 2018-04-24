@@ -1,6 +1,6 @@
 {
   "name": "socrates-css",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "dependencies": {
     "@frctl/fractal": "^1.1.7",
     "bootstrap": "4.1.0"
