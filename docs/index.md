@@ -18,12 +18,15 @@ It includes the following main packages:
 - Gradients `Done`
 - Grid `In Progress`
 - Spacing `Done`
-- Icons `In Progress`
+- Icons `Done`
 - Shadows `Done`
 - Buttons `Done`
 - Forms `Done`
 - Badges `Done`
-- Alerts `DONE`
+- Alerts `Done`
+- Dropdowns `Done`
+- Navbars `In Progress`
+- Tabs `Done`
 
 ### Usage
 
