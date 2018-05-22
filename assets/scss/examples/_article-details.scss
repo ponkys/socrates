@@ -47,9 +47,15 @@
 }
 
 .article-bar {
+
+	@include media-iPhone-X {
+	  padding-bottom: env(safe-area-inset-bottom); // temporary fix for iPhone X until there's a better way 🙄
+	}
+
+	z-index: $zindex-sticky - 1;
 	border-top-right-radius: $border-radius-lg;
 	border-top-left-radius: $border-radius-lg;
-	box-shadow: 0 -8px 32px -4px rgba($brand-gray-darker,.08);
+	box-shadow: 0 -4px 16px -4px rgba(black, 0.08);
 }
 
 twitterwidget {

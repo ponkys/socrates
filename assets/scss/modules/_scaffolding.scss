@@ -15,3 +15,7 @@ a, svg {
   @include transition($transition-default);
   text-decoration: none !important;
 }
+
+footer {
+	margin-top: $spacer * 15;
+}

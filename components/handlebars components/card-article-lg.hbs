@@ -1,0 +1,21 @@
+<div class="{{className}}">
+  <a href="#">
+    <div class="rounded-lg rect rect-4-3" style="background-image: url('{{img}}')"></div>
+    {{!-- <img src="{{img}}" alt="" class="img-fluid rounded-lg"> --}}
+    <{{heading}} class="font-weight-bold mt-3">
+      {{title}}
+    </{{heading}}>
+    <p class="mt-2 mb-0 text-lg text-gray-light font-weight-semibold">
+      {{teaser}}
+    </p>
+    <div class="mt-2">
+      <span class="font-weight-semibold text-gray-dark text-sm">
+        <img class="icon size-sm mr-2" src="{{path '/assets/img/brand-icon.svg' }}" />Onefootball
+      </span>
+      <span class="text-gray-light">
+        <img class="inject-me icon text-gray-light" src="{{path '/assets/img/icons/ic_dot_24px.svg' }}" />
+      </span>
+      <span class="text-gray-light text-sm">{{timestamp}}</span>
+    </div>
+  </a>
+</div>

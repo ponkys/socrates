@@ -1,21 +1,14 @@
 {{!-- card-default --}}
 
-{{!-- <div class="container">
-	<div class="row">
-		<div class="col-24">
-			{{> @text-default tag="h3" text="Popular Teams" }}
-		</div>
-	</div>
-</div> --}}
 <div class="container container-scroll mt-4">
-	<div class="row row-scroll pb-4">
-		{{> @entity-tile img="https://images.onefootball.com/icons/teams/164/6.png" color="#ED1148" name="FC Bayern Munich" }}
-		{{> @entity-tile img="https://images.onefootball.com/icons/teams/164/26.png" color="#FFFFFF" name="Real Madrid" }}
-		{{> @entity-tile img="https://images.onefootball.com/icons/teams/164/5.png" color="#8E1B3B" name="Barcelona" }}
-{{!-- 		{{> @entity-tile img="https://images.onefootball.com/icons/teams/164/155.png" color="#FDE100" name="B. Dortmund" }}
-		{{> @entity-tile img="https://images.onefootball.com/icons/teams/164/26.png" color="#FFFFFF" name="Real Madrid" }}
-		{{> @entity-tile img="https://images.onefootball.com/icons/teams/164/6.png" color="#ED1148" name="FC Bayern Munich" }}
-		{{> @entity-tile img="https://images.onefootball.com/icons/teams/164/5.png" color="#8E1B3B" name="Barcelona" }}
-		{{> @entity-tile img="https://images.onefootball.com/icons/teams/164/155.png" color="#FDE100" name="B. Dortmund" }} --}}
+	<div class="row no-gutters">
+		<div class="col-24 {{className}}">
+			<div class="row row-scroll pb-4">
+				{{> @entity-tile className="col-10 col-sm-8 col-md-6 col-lg-4" img="https://images.onefootball.com/icons/teams/164/6.png" color="#ED1148" name="FC Bayern Munich" }}
+				{{> @entity-tile className="col-10 col-sm-8 col-md-6 col-lg-4" img="https://images.onefootball.com/icons/teams/164/26.png" color="#FFFFFF" name="Real Madrid" }}
+				{{> @entity-tile className="col-10 col-sm-8 col-md-6 col-lg-4" img="https://images.onefootball.com/icons/teams/164/5.png" color="#8E1B3B" name="Barcelona" }}
+				{{> @entity-tile className="col-10 col-sm-8 col-md-6 col-lg-4" img="https://images.onefootball.com/icons/teams/164/155.png" color="#FDE100" name="B. Dortmund" }}
+			</div>
+		</div>
 	</div>
 </div>
