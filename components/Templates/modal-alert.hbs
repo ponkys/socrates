@@ -1,0 +1,25 @@
+{{!-- modal alert --}}
+
+<div class="modal fade {{className}}" tabindex="-1" role="dialog" id="{{id}}">
+  <div class="modal-dialog elevated-4 rounded-lg" role="document">
+    <div class="modal-content rounded-lg">
+      <div class="modal-header">
+        <h5 class="modal-title font-weight-bold">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <img class="size-lg inject-me mx-auto text-gray d-block" src="{{path '/assets/img/icons/ic_close_24px.svg' }}" />
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+      <div class="modal-footer">
+        {{#if actionPrimary }}
+          <button type="button" class="btn btn-primary">{{actionPrimary}}</button>
+        {{/if}}
+        {{#if actionSecondary }}
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">{{actionSecondary}}</button>
+        {{/if}}
+      </div>
+    </div>
+  </div>
+</div>

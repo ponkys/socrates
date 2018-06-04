@@ -1,0 +1,355 @@
+{{!-- modal search + icon grid --}}
+
+<div class="modal fade {{className}}" tabindex="-1" role="dialog" id="{{id}}">
+  <div class="modal-dialog modal-lg elevated-4 rounded-lg" role="document">
+    <div class="modal-content rounded-lg">
+      <div class="modal-header mb-3">
+        <h5 class="modal-title font-weight-bold">Pick an icon or search</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <img class="size-lg inject-me mx-auto text-gray d-block" src="{{path '/assets/img/icons/ic_close_24px.svg' }}" />
+        </button>
+      </div>
+      <div class="p-3">
+        <div class="input-group input-group-lg elevated-2">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroupPrepend3">
+              <img class="size-lg inject-me text-gray" src="{{path '/assets/img/icons/ic_search_24px.svg' }}" />
+            </span>
+          </div>
+          <input type="text" class="form-control form-control-lg" placeholder="Search teams, players, leagues or icons" />
+        </div>
+      </div>
+      <div class="modal-body modal-body-scroll">
+        <div class="row">
+          <div class="col-8 col-sm-6 col-lg-4">
+            <a href="#" class="bg-white rounded-lg p-2 d-block text-center my-2">
+              <img class="size-3" src="https://emojipedia-us.s3.amazonaws.com/thumbs/320/apple/129/fire_1f525.png" />
+              <span class="text-center text-truncate text-sm text-gray d-block mt-2">Name</span>
+            </a>
+          </div>
+          <div class="col-8 col-sm-6 col-lg-4">
+            <a href="#" class="bg-white rounded-lg p-2 d-block text-center my-2">
+              <img class="size-3" src="https://emojipedia-us.s3.amazonaws.com/thumbs/320/apple/129/grinning-face_1f600.png" />
+              <span class="text-center text-truncate text-sm text-gray d-block mt-2">Name</span>
+            </a>
+          </div>
+          <div class="col-8 col-sm-6 col-lg-4">
+            <a href="#" class="bg-white rounded-lg p-2 d-block text-center my-2">
+              <img class="size-3" src="https://emojipedia-us.s3.amazonaws.com/thumbs/320/apple/129/grinning-face-with-smiling-eyes_1f601.png" />
+              <span class="text-center text-truncate text-sm text-gray d-block mt-2">Name</span>
+            </a>
+          </div>
+          <div class="col-8 col-sm-6 col-lg-4">
+            <a href="#" class="bg-white rounded-lg p-2 d-block text-center my-2">
+              <img class="size-3" src="https://emojipedia-us.s3.amazonaws.com/thumbs/320/apple/129/serious-face-with-symbols-covering-mouth_1f92c.png" />
+              <span class="text-center text-truncate text-sm text-gray d-block mt-2">Name</span>
+            </a>
+          </div>
+
+          <div class="col-8 col-sm-6 col-lg-4">
+            <a href="#" class="bg-white rounded-lg p-2 d-block text-center my-2">
+              <img class="size-3" src="https://emojipedia-us.s3.amazonaws.com/thumbs/320/apple/129/ghost_1f47b.png" />
+              <span class="text-center text-truncate text-sm text-gray d-block mt-2">Name</span>
+            </a>
+          </div>
+          <div class="col-8 col-sm-6 col-lg-4">
+            <a href="#" class="bg-white rounded-lg p-2 d-block text-center my-2">
+              <img class="size-3" src="https://emojipedia-us.s3.amazonaws.com/thumbs/320/apple/129/skull-and-crossbones_2620.png" />
+              <span class="text-center text-truncate text-sm text-gray d-block mt-2">Name</span>
+            </a>
+          </div>
+          <div class="col-8 col-sm-6 col-lg-4">
+            <a href="#" class="bg-white rounded-lg p-2 d-block text-center my-2">
+              <img class="size-3" src="https://emojipedia-us.s3.amazonaws.com/thumbs/320/apple/129/female-health-worker-type-4_1f469-1f3fd-200d-2695-fe0f.png" />
+              <span class="text-center text-truncate text-sm text-gray d-block mt-2">Name</span>
+            </a>
+          </div>
+          <div class="col-8 col-sm-6 col-lg-4">
+            <a href="#" class="bg-white rounded-lg p-2 d-block text-center my-2">
+              <img class="size-3" src="https://emojipedia-us.s3.amazonaws.com/thumbs/320/apple/129/male-health-worker-type-1-2_1f468-1f3fb-200d-2695-fe0f.png" />
+              <span class="text-center text-truncate text-sm text-gray d-block mt-2">Name</span>
+            </a>
+          </div>
+          <div class="col-8 col-sm-6 col-lg-4">
+            <a href="#" class="bg-white rounded-lg p-2 d-block text-center my-2">
+              <img class="size-3" src="https://emojipedia-us.s3.amazonaws.com/thumbs/320/apple/129/construction-worker_1f477.png" />
+              <span class="text-center text-truncate text-sm text-gray d-block mt-2">Name</span>
+            </a>
+          </div>
+          <div class="col-8 col-sm-6 col-lg-4">
+            <a href="#" class="bg-white rounded-lg p-2 d-block text-center my-2">
+              <img class="size-3" src="https://emojipedia-us.s3.amazonaws.com/thumbs/320/apple/129/man-with-turban_emoji-modifier-fitzpatrick-type-6_1f473-1f3ff_1f3ff.png" />
+              <span class="text-center text-truncate text-sm text-gray d-block mt-2">Name</span>
+            </a>
+          </div>
+          <div class="col-8 col-sm-6 col-lg-4">
+            <a href="#" class="bg-white rounded-lg p-2 d-block text-center my-2">
+              <img class="size-3" src="https://emojipedia-us.s3.amazonaws.com/thumbs/320/apple/129/merperson_1f9dc.png" />
+              <span class="text-center text-truncate text-sm text-gray d-block mt-2">Name</span>
+            </a>
+          </div>
+          <div class="col-8 col-sm-6 col-lg-4">
+            <a href="#" class="bg-white rounded-lg p-2 d-block text-center my-2">
+              <img class="size-3" src="https://emojipedia-us.s3.amazonaws.com/thumbs/320/apple/129/woman-genie_1f9de-200d-2640-fe0f.png" />
+              <span class="text-center text-truncate text-sm text-gray d-block mt-2">Name</span>
+            </a>
+          </div>
+          <div class="col-8 col-sm-6 col-lg-4">
+            <a href="#" class="bg-white rounded-lg p-2 d-block text-center my-2">
+              <img class="size-3" src="https://emojipedia-us.s3.amazonaws.com/thumbs/160/apple/129/face-with-ok-gesture_emoji-modifier-fitzpatrick-type-1-2_1f646-1f3fb_1f3fb.png" />
+              <span class="text-center text-truncate text-sm text-gray d-block mt-2">Name</span>
+            </a>
+          </div>
+          <div class="col-8 col-sm-6 col-lg-4">
+            <a href="#" class="bg-white rounded-lg p-2 d-block text-center my-2">
+              <img class="size-3" src="https://emojipedia-us.s3.amazonaws.com/thumbs/320/apple/129/man-running-type-3_1f3c3-1f3fc-200d-2642-fe0f.png" />
+              <span class="text-center text-truncate text-sm text-gray d-block mt-2">Name</span>
+            </a>
+          </div>
+          <div class="col-8 col-sm-6 col-lg-4">
+            <a href="#" class="bg-white rounded-lg p-2 d-block text-center my-2">
+              <img class="size-3" src="https://emojipedia-us.s3.amazonaws.com/thumbs/320/apple/129/fire_1f525.png" />
+              <span class="text-center text-truncate text-sm text-gray d-block mt-2">Name</span>
+            </a>
+          </div>
+          <div class="col-8 col-sm-6 col-lg-4">
+            <a href="#" class="bg-white rounded-lg p-2 d-block text-center my-2">
+              <img class="size-3" src="https://emojipedia-us.s3.amazonaws.com/thumbs/320/apple/129/grinning-face_1f600.png" />
+              <span class="text-center text-truncate text-sm text-gray d-block mt-2">Name</span>
+            </a>
+          </div>
+          <div class="col-8 col-sm-6 col-lg-4">
+            <a href="#" class="bg-white rounded-lg p-2 d-block text-center my-2">
+              <img class="size-3" src="https://emojipedia-us.s3.amazonaws.com/thumbs/320/apple/129/grinning-face-with-smiling-eyes_1f601.png" />
+              <span class="text-center text-truncate text-sm text-gray d-block mt-2">Name</span>
+            </a>
+          </div>
+          <div class="col-8 col-sm-6 col-lg-4">
+            <a href="#" class="bg-white rounded-lg p-2 d-block text-center my-2">
+              <img class="size-3" src="https://emojipedia-us.s3.amazonaws.com/thumbs/320/apple/129/serious-face-with-symbols-covering-mouth_1f92c.png" />
+              <span class="text-center text-truncate text-sm text-gray d-block mt-2">Name</span>
+            </a>
+          </div>
+
+          <div class="col-8 col-sm-6 col-lg-4">
+            <a href="#" class="bg-white rounded-lg p-2 d-block text-center my-2">
+              <img class="size-3" src="https://emojipedia-us.s3.amazonaws.com/thumbs/320/apple/129/ghost_1f47b.png" />
+              <span class="text-center text-truncate text-sm text-gray d-block mt-2">Name</span>
+            </a>
+          </div>
+          <div class="col-8 col-sm-6 col-lg-4">
+            <a href="#" class="bg-white rounded-lg p-2 d-block text-center my-2">
+              <img class="size-3" src="https://emojipedia-us.s3.amazonaws.com/thumbs/320/apple/129/skull-and-crossbones_2620.png" />
+              <span class="text-center text-truncate text-sm text-gray d-block mt-2">Name</span>
+            </a>
+          </div>
+          <div class="col-8 col-sm-6 col-lg-4">
+            <a href="#" class="bg-white rounded-lg p-2 d-block text-center my-2">
+              <img class="size-3" src="https://emojipedia-us.s3.amazonaws.com/thumbs/320/apple/129/female-health-worker-type-4_1f469-1f3fd-200d-2695-fe0f.png" />
+              <span class="text-center text-truncate text-sm text-gray d-block mt-2">Name</span>
+            </a>
+          </div>
+          <div class="col-8 col-sm-6 col-lg-4">
+            <a href="#" class="bg-white rounded-lg p-2 d-block text-center my-2">
+              <img class="size-3" src="https://emojipedia-us.s3.amazonaws.com/thumbs/320/apple/129/male-health-worker-type-1-2_1f468-1f3fb-200d-2695-fe0f.png" />
+              <span class="text-center text-truncate text-sm text-gray d-block mt-2">Name</span>
+            </a>
+          </div>
+          <div class="col-8 col-sm-6 col-lg-4">
+            <a href="#" class="bg-white rounded-lg p-2 d-block text-center my-2">
+              <img class="size-3" src="https://emojipedia-us.s3.amazonaws.com/thumbs/320/apple/129/construction-worker_1f477.png" />
+              <span class="text-center text-truncate text-sm text-gray d-block mt-2">Name</span>
+            </a>
+          </div>
+          <div class="col-8 col-sm-6 col-lg-4">
+            <a href="#" class="bg-white rounded-lg p-2 d-block text-center my-2">
+              <img class="size-3" src="https://emojipedia-us.s3.amazonaws.com/thumbs/320/apple/129/man-with-turban_emoji-modifier-fitzpatrick-type-6_1f473-1f3ff_1f3ff.png" />
+              <span class="text-center text-truncate text-sm text-gray d-block mt-2">Name</span>
+            </a>
+          </div>
+          <div class="col-8 col-sm-6 col-lg-4">
+            <a href="#" class="bg-white rounded-lg p-2 d-block text-center my-2">
+              <img class="size-3" src="https://emojipedia-us.s3.amazonaws.com/thumbs/320/apple/129/merperson_1f9dc.png" />
+              <span class="text-center text-truncate text-sm text-gray d-block mt-2">Name</span>
+            </a>
+          </div>
+          <div class="col-8 col-sm-6 col-lg-4">
+            <a href="#" class="bg-white rounded-lg p-2 d-block text-center my-2">
+              <img class="size-3" src="https://emojipedia-us.s3.amazonaws.com/thumbs/320/apple/129/woman-genie_1f9de-200d-2640-fe0f.png" />
+              <span class="text-center text-truncate text-sm text-gray d-block mt-2">Name</span>
+            </a>
+          </div>
+          <div class="col-8 col-sm-6 col-lg-4">
+            <a href="#" class="bg-white rounded-lg p-2 d-block text-center my-2">
+              <img class="size-3" src="https://emojipedia-us.s3.amazonaws.com/thumbs/160/apple/129/face-with-ok-gesture_emoji-modifier-fitzpatrick-type-1-2_1f646-1f3fb_1f3fb.png" />
+              <span class="text-center text-truncate text-sm text-gray d-block mt-2">Name</span>
+            </a>
+          </div>
+          <div class="col-8 col-sm-6 col-lg-4">
+            <a href="#" class="bg-white rounded-lg p-2 d-block text-center my-2">
+              <img class="size-3" src="https://emojipedia-us.s3.amazonaws.com/thumbs/320/apple/129/man-running-type-3_1f3c3-1f3fc-200d-2642-fe0f.png" />
+              <span class="text-center text-truncate text-sm text-gray d-block mt-2">Name</span>
+            </a>
+          </div>
+          <div class="col-8 col-sm-6 col-lg-4">
+            <a href="#" class="bg-white rounded-lg p-2 d-block text-center my-2">
+              <img class="size-3" src="https://emojipedia-us.s3.amazonaws.com/thumbs/320/apple/129/fire_1f525.png" />
+              <span class="text-center text-truncate text-sm text-gray d-block mt-2">Name</span>
+            </a>
+          </div>
+          <div class="col-8 col-sm-6 col-lg-4">
+            <a href="#" class="bg-white rounded-lg p-2 d-block text-center my-2">
+              <img class="size-3" src="https://emojipedia-us.s3.amazonaws.com/thumbs/320/apple/129/grinning-face_1f600.png" />
+              <span class="text-center text-truncate text-sm text-gray d-block mt-2">Name</span>
+            </a>
+          </div>
+          <div class="col-8 col-sm-6 col-lg-4">
+            <a href="#" class="bg-white rounded-lg p-2 d-block text-center my-2">
+              <img class="size-3" src="https://emojipedia-us.s3.amazonaws.com/thumbs/320/apple/129/grinning-face-with-smiling-eyes_1f601.png" />
+              <span class="text-center text-truncate text-sm text-gray d-block mt-2">Name</span>
+            </a>
+          </div>
+          <div class="col-8 col-sm-6 col-lg-4">
+            <a href="#" class="bg-white rounded-lg p-2 d-block text-center my-2">
+              <img class="size-3" src="https://emojipedia-us.s3.amazonaws.com/thumbs/320/apple/129/serious-face-with-symbols-covering-mouth_1f92c.png" />
+              <span class="text-center text-truncate text-sm text-gray d-block mt-2">Name</span>
+            </a>
+          </div>
+
+          <div class="col-8 col-sm-6 col-lg-4">
+            <a href="#" class="bg-white rounded-lg p-2 d-block text-center my-2">
+              <img class="size-3" src="https://emojipedia-us.s3.amazonaws.com/thumbs/320/apple/129/ghost_1f47b.png" />
+              <span class="text-center text-truncate text-sm text-gray d-block mt-2">Name</span>
+            </a>
+          </div>
+          <div class="col-8 col-sm-6 col-lg-4">
+            <a href="#" class="bg-white rounded-lg p-2 d-block text-center my-2">
+              <img class="size-3" src="https://emojipedia-us.s3.amazonaws.com/thumbs/320/apple/129/skull-and-crossbones_2620.png" />
+              <span class="text-center text-truncate text-sm text-gray d-block mt-2">Name</span>
+            </a>
+          </div>
+          <div class="col-8 col-sm-6 col-lg-4">
+            <a href="#" class="bg-white rounded-lg p-2 d-block text-center my-2">
+              <img class="size-3" src="https://emojipedia-us.s3.amazonaws.com/thumbs/320/apple/129/female-health-worker-type-4_1f469-1f3fd-200d-2695-fe0f.png" />
+              <span class="text-center text-truncate text-sm text-gray d-block mt-2">Name</span>
+            </a>
+          </div>
+          <div class="col-8 col-sm-6 col-lg-4">
+            <a href="#" class="bg-white rounded-lg p-2 d-block text-center my-2">
+              <img class="size-3" src="https://emojipedia-us.s3.amazonaws.com/thumbs/320/apple/129/male-health-worker-type-1-2_1f468-1f3fb-200d-2695-fe0f.png" />
+              <span class="text-center text-truncate text-sm text-gray d-block mt-2">Name</span>
+            </a>
+          </div>
+          <div class="col-8 col-sm-6 col-lg-4">
+            <a href="#" class="bg-white rounded-lg p-2 d-block text-center my-2">
+              <img class="size-3" src="https://emojipedia-us.s3.amazonaws.com/thumbs/320/apple/129/construction-worker_1f477.png" />
+              <span class="text-center text-truncate text-sm text-gray d-block mt-2">Name</span>
+            </a>
+          </div>
+          <div class="col-8 col-sm-6 col-lg-4">
+            <a href="#" class="bg-white rounded-lg p-2 d-block text-center my-2">
+              <img class="size-3" src="https://emojipedia-us.s3.amazonaws.com/thumbs/320/apple/129/man-with-turban_emoji-modifier-fitzpatrick-type-6_1f473-1f3ff_1f3ff.png" />
+              <span class="text-center text-truncate text-sm text-gray d-block mt-2">Name</span>
+            </a>
+          </div>
+          <div class="col-8 col-sm-6 col-lg-4">
+            <a href="#" class="bg-white rounded-lg p-2 d-block text-center my-2">
+              <img class="size-3" src="https://emojipedia-us.s3.amazonaws.com/thumbs/320/apple/129/merperson_1f9dc.png" />
+              <span class="text-center text-truncate text-sm text-gray d-block mt-2">Name</span>
+            </a>
+          </div>
+          <div class="col-8 col-sm-6 col-lg-4">
+            <a href="#" class="bg-white rounded-lg p-2 d-block text-center my-2">
+              <img class="size-3" src="https://emojipedia-us.s3.amazonaws.com/thumbs/320/apple/129/woman-genie_1f9de-200d-2640-fe0f.png" />
+              <span class="text-center text-truncate text-sm text-gray d-block mt-2">Name</span>
+            </a>
+          </div>
+          <div class="col-8 col-sm-6 col-lg-4">
+            <a href="#" class="bg-white rounded-lg p-2 d-block text-center my-2">
+              <img class="size-3" src="https://emojipedia-us.s3.amazonaws.com/thumbs/160/apple/129/face-with-ok-gesture_emoji-modifier-fitzpatrick-type-1-2_1f646-1f3fb_1f3fb.png" />
+              <span class="text-center text-truncate text-sm text-gray d-block mt-2">Name</span>
+            </a>
+          </div>
+          <div class="col-8 col-sm-6 col-lg-4">
+            <a href="#" class="bg-white rounded-lg p-2 d-block text-center my-2">
+              <img class="size-3" src="https://emojipedia-us.s3.amazonaws.com/thumbs/320/apple/129/man-running-type-3_1f3c3-1f3fc-200d-2642-fe0f.png" />
+              <span class="text-center text-truncate text-sm text-gray d-block mt-2">Name</span>
+            </a>
+          </div>
+          <div class="col-8 col-sm-6 col-lg-4">
+            <a href="#" class="bg-white rounded-lg p-2 d-block text-center my-2">
+              <img class="size-3" src="https://emojipedia-us.s3.amazonaws.com/thumbs/320/apple/129/ghost_1f47b.png" />
+              <span class="text-center text-truncate text-sm text-gray d-block mt-2">Name</span>
+            </a>
+          </div>
+          <div class="col-8 col-sm-6 col-lg-4">
+            <a href="#" class="bg-white rounded-lg p-2 d-block text-center my-2">
+              <img class="size-3" src="https://emojipedia-us.s3.amazonaws.com/thumbs/320/apple/129/skull-and-crossbones_2620.png" />
+              <span class="text-center text-truncate text-sm text-gray d-block mt-2">Name</span>
+            </a>
+          </div>
+          <div class="col-8 col-sm-6 col-lg-4">
+            <a href="#" class="bg-white rounded-lg p-2 d-block text-center my-2">
+              <img class="size-3" src="https://emojipedia-us.s3.amazonaws.com/thumbs/320/apple/129/female-health-worker-type-4_1f469-1f3fd-200d-2695-fe0f.png" />
+              <span class="text-center text-truncate text-sm text-gray d-block mt-2">Name</span>
+            </a>
+          </div>
+          <div class="col-8 col-sm-6 col-lg-4">
+            <a href="#" class="bg-white rounded-lg p-2 d-block text-center my-2">
+              <img class="size-3" src="https://emojipedia-us.s3.amazonaws.com/thumbs/320/apple/129/male-health-worker-type-1-2_1f468-1f3fb-200d-2695-fe0f.png" />
+              <span class="text-center text-truncate text-sm text-gray d-block mt-2">Name</span>
+            </a>
+          </div>
+          <div class="col-8 col-sm-6 col-lg-4">
+            <a href="#" class="bg-white rounded-lg p-2 d-block text-center my-2">
+              <img class="size-3" src="https://emojipedia-us.s3.amazonaws.com/thumbs/320/apple/129/construction-worker_1f477.png" />
+              <span class="text-center text-truncate text-sm text-gray d-block mt-2">Name</span>
+            </a>
+          </div>
+          <div class="col-8 col-sm-6 col-lg-4">
+            <a href="#" class="bg-white rounded-lg p-2 d-block text-center my-2">
+              <img class="size-3" src="https://emojipedia-us.s3.amazonaws.com/thumbs/320/apple/129/man-with-turban_emoji-modifier-fitzpatrick-type-6_1f473-1f3ff_1f3ff.png" />
+              <span class="text-center text-truncate text-sm text-gray d-block mt-2">Name</span>
+            </a>
+          </div>
+          <div class="col-8 col-sm-6 col-lg-4">
+            <a href="#" class="bg-white rounded-lg p-2 d-block text-center my-2">
+              <img class="size-3" src="https://emojipedia-us.s3.amazonaws.com/thumbs/320/apple/129/merperson_1f9dc.png" />
+              <span class="text-center text-truncate text-sm text-gray d-block mt-2">Name</span>
+            </a>
+          </div>
+          <div class="col-8 col-sm-6 col-lg-4">
+            <a href="#" class="bg-white rounded-lg p-2 d-block text-center my-2">
+              <img class="size-3" src="https://emojipedia-us.s3.amazonaws.com/thumbs/320/apple/129/woman-genie_1f9de-200d-2640-fe0f.png" />
+              <span class="text-center text-truncate text-sm text-gray d-block mt-2">Name</span>
+            </a>
+          </div>
+          <div class="col-8 col-sm-6 col-lg-4">
+            <a href="#" class="bg-white rounded-lg p-2 d-block text-center my-2">
+              <img class="size-3" src="https://emojipedia-us.s3.amazonaws.com/thumbs/160/apple/129/face-with-ok-gesture_emoji-modifier-fitzpatrick-type-1-2_1f646-1f3fb_1f3fb.png" />
+              <span class="text-center text-truncate text-sm text-gray d-block mt-2">Name</span>
+            </a>
+          </div>
+          <div class="col-8 col-sm-6 col-lg-4">
+            <a href="#" class="bg-white rounded-lg p-2 d-block text-center my-2">
+              <img class="size-3" src="https://emojipedia-us.s3.amazonaws.com/thumbs/320/apple/129/man-running-type-3_1f3c3-1f3fc-200d-2642-fe0f.png" />
+              <span class="text-center text-truncate text-sm text-gray d-block mt-2">Name</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="mr-auto">
+          <img class="size-2" src="https://emojipedia-us.s3.amazonaws.com/thumbs/320/apple/129/merperson_1f9dc.png" />
+          <span class="text-center text-truncate text-sm text-gray ml-2">Selected icon</span>
+        </div>
+        {{#if actionPrimary }}
+        <button type="button" class="btn btn-primary">{{actionPrimary}}</button>
+        {{/if}}
+        {{#if actionSecondary }}
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">{{actionSecondary}}</button>
+        {{/if}}
+      </div>
+    </div>
+  </div>
+</div>
