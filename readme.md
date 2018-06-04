@@ -6,7 +6,7 @@
 
 Socrates is the design system that powers Onefootball web projects
 
-It's a custom version of Bootstrap, so to run it, Bootstrap has to be included in your dependencies
+It's a custom version of Bootstrap, so to run it, Bootstrap 4 has to be included in your dependencies
 
 It includes the following main packages:
 
@@ -15,20 +15,20 @@ It includes the following main packages:
 - socrates-product `_socrates-product.scss` used in Company website & Onefootball.com
 
 ### Module Status
-- Typography `Done`
-- Colors `Done`
-- Gradients `Done`
-- Grid `In Progress`
-- Spacing `Done`
-- Icons `Done`
-- Shadows `Done`
-- Buttons `Done`
-- Forms `Done`
-- Badges `Done`
-- Alerts `Done`
-- Dropdowns `Done`
-- Navbars `In Progress`
-- Tabs `Done`
+1. Typography `Done`
+2. Colors `Done`
+3. Spacing `Done`
+4. Grid `Done `
+5. Icons `Done`
+6. Buttons `Done`
+7. Shadows `Done`
+8. Alerts `Done`
+9. Badges `Done`
+10. Forms `Done`
+11. Dropdowns `Done`
+12. Navbars `In Progress`
+13. Tabs `Done`
+14. Modals `Done`
 
 ### Install & Run the docs
 - clone this repo
