@@ -31,49 +31,52 @@
 						</div>
 					</div>
 					<div class="form-group row mt-5">
-						<label for="inputName" class="col-sm-4 col-form-label">Image</label>
+						<label for="inputName" class="col-sm-4 col-form-label">Icon</label>
 						<div class="col-sm-18">
-
+							<div class="mb-3">
+								<label class="col-form-label mr-3">Current: </label>
+								<img src="https://images.onefootball.com/default_gallery-icon.png" class="icon size-3">
+							</div>
 							<div class="input-group mb-3">
 								<div class="input-group-prepend">
-									<span class="input-group-text" id="inputGroup-sizing-default">
+									{{!-- <span class="input-group-text" id="inputGroup-sizing-default">
 										<img src="https://images.onefootball.com/default_gallery-icon.png" class="icon">
-									</span>
+									</span> --}}
+									<a href="#" class="btn btn-outline-primary border rounded-left" data-toggle="modal" data-target="#modal-search">Pick an icon</a>
+									<span class="input-group-text" id="inputGroup-sizing-default">
+										or
+									</div>
+									<div class="custom-file">
+										<input type="file" class="custom-file-input" id="customFile">
+										<label class="custom-file-label text-primary" for="customFile">Choose file</label>
+									</div>
 								</div>
-								<div class="custom-file">
-									<input type="file" class="custom-file-input" id="customFile">
-									<label class="custom-file-label" for="customFile">Choose file</label>
-								</div>
+								<p id="inputDesc" class="text-sm form-text text-info">
+									<img class="inject-me mx-auto icon size-lg text-info" src="{{path '/assets/img/icons/ic_info_24px.svg' }}" />
+									Please try to only pick an existing icon and in case of doubt, email this dude 👨‍💻<a class="text-info" href="mailto:zero@onefootball.com"><strong>zero@onefootball.com</strong></a>
+								</p>
 							</div>
-
-							<p id="inputDesc" class="form-text mt-3">
-								<a href="#" class="btn btn-sm btn-secondary">
-									<img src="https://images.onefootball.com/default_gallery-icon.png" class="icon">
-									Use default image
-								</a>
-							</p>
 						</div>
-					</div>
-					<div class="form-group row mt-5">
-						<label class="col-sm-4 col-form-label">Contextual message</label>
-						<div class="col-sm-18">
-							<input type="text" class="form-control" id="inputContext" placeholder="e.g. Curatd by Onefootball Team">
-							<p id="inputDesc" class="text-sm form-text text-warning">
-								<img class="inject-me mx-auto icon size-lg text-warning" src="{{path '/assets/img/icons/ic_warning_24px.svg' }}" />
-								Leave it empty if it's for a followed entity or it will fallback to a predefined message
-							</p>
+						<div class="form-group row mt-5">
+							<label class="col-sm-4 col-form-label">Contextual message</label>
+							<div class="col-sm-18">
+								<input type="text" class="form-control" id="inputContext" placeholder="e.g. Curatd by Onefootball Team">
+								<p id="inputDesc" class="text-sm form-text text-warning">
+									<img class="inject-me mx-auto icon size-lg text-warning" src="{{path '/assets/img/icons/ic_warning_24px.svg' }}" />
+									Leave it empty if it's for a followed entity or it will fallback to a predefined message
+								</p>
+							</div>
 						</div>
-					</div>
-					<div class="form-group row mt-5">
-						<label for="inputDesc" class="col-sm-4 col-form-label">Description</label>
-						<div class="col-sm-18">
-							<textarea class="form-control" name="" placeholder="in few words what is this gallery all about"></textarea>
-							<p id="inputDesc" class="text-sm form-text text-info">
-								<img class="inject-me mx-auto icon size-lg text-info" src="{{path '/assets/img/icons/ic_info_24px.svg' }}" />
-								Will not be shown to users
-							</p>
+						<div class="form-group row mt-5">
+							<label for="inputDesc" class="col-sm-4 col-form-label">Description</label>
+							<div class="col-sm-18">
+								<textarea class="form-control" name="" placeholder="in few words what is this gallery all about"></textarea>
+								<p id="inputDesc" class="text-sm form-text text-info">
+									<img class="inject-me mx-auto icon size-lg text-info" src="{{path '/assets/img/icons/ic_info_24px.svg' }}" />
+									Will not be shown to users
+								</p>
+							</div>
 						</div>
-					</div>
 {{!-- 					for a later version
 					<div class="form-group row mt-5">
 						<label for="inputSelect3" class="col-sm-4 col-form-label">Direction</label>
@@ -286,3 +289,5 @@
 </div> {{!-- /.socrates-content --}}
 
 {{> @footer-admin }}
+
+{{> @modal-search id="modal-search" actionPrimary="Done"}}
