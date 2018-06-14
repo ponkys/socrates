@@ -4,87 +4,20 @@
 
 <div class="socrates-content">
 
-	<div class="container pt-4">
-		<div class="row">
-			<div class="col-24 mt-4">
-				<div class="d-flex">
-					<div class="avatar mt-2 size-5 mr-4" style="background-image: url(https://images.onefootball.com/default_gallery-icon.png);"></div>
-					<div>
-						<h1 class="font-weight-bold">Trending News Gallery</h1>
-						<p class="text-muted">Curated by Onefootball Team
-							<img class="inject-me icon text-gray-light" src="{{path '/assets/img/icons/ic_dot_24px.svg' }}" />
-							<span class="font-weight-bold badge badge-danger">DRAFT</span> / <span class="font-weight-bold badge badge-primary">PUBLISHED</span></p>
-					</div>
-					<div class="ml-auto align-self-center">
-						<div class="btn-group mt-2" role="group" aria-label="Basic example">
-							<a href="#" class="btn btn-outline-danger">Delete</a>
-							<a href="#" class="btn btn-secondary">Unpublish</a>
-							<a href="#" class="btn btn-primary">Publish</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-24 mt-7">
-				<div class="d-flex mb-3">
-					<a href="#" class="h4 text-info">— Information and targeting
-						<img class="text-info inject-me icon size-lg" src="{{path '/assets/img/icons/ic_chevron_right_24px.svg' }}" />
-					</a>
-					<div class="ml-auto align-self-center">
-						<a href="#" class="btn btn-outline-info btn-sm float-right">Edit</a>
-					</div>
-				</div>
-				<div class="border p-3 rounded-lg">
-					<dl class="row m-0">
-						<dt class="col-sm-4 mt-3">Language:</dt>
-						<dd class="col-sm-8 mt-3">German</dd>
-						<dt class="col-sm-4 mt-3">Published to:</dt>
-						<dd class="col-sm-8 mt-3">Team</dd>
-						<dt class="col-sm-4 mt-3">Rank:</dt>
-						<dd class="col-sm-8 mt-3">Before Favorite teams area — Rank #1</dd>
-						<dt class="col-sm-4 mt-3">ID:</dt>
-						<dd class="col-sm-8 mt-3">18274162</dd>
-						<dt class="col-sm-4 mt-3">Index:</dt>
-						<dd class="col-sm-8 mt-3">#2</dd>
-						<dt class="col-sm-4 mt-3">Content Type:</dt>
-						<dd class="col-sm-8 mt-3">News Topic Gallery</dd>
-						<dt class="col-sm-4 mt-3">Push link:</dt>
-						<dd class="col-sm-8 mt-3 mb-0">
-							<a href="#" class="text-success" data-toggle="tooltip" data-placement="top" title="Click to copy">
-								onefootball://editorial/18274162?language=de
-								<img class="text-success inject-me icon size-lg" src="{{path '/assets/img/icons/ic_content_copy_24px.svg' }}" />
-							</a>
-						</dd>
-						<dt class="col-sm-4 mt-3">Description:</dt>
-						<dd class="col-sm-8 mt-3">All the news that is fit to curate. Native and magazine only.</dd>
-						<dt class="col-sm-4 mt-3">Entity:</dt>
-						<dd class="col-sm-8 mt-3 mb-0">
-							<div class="mb-2">
-								<img src="https://images.onefootball.com/icons/teams/164/263.png" class="size-2 mr-2">Paris SG
-								<span class="badge badge-info badge-pill ml-2">Official</span>
-							</div>
-
-							<div class="mb-2">
-								<img src="https://images.onefootball.com/icons/teams/164/6.png" class="size-2 mr-2">Bayern Munich
-							</div>
-						</dd>
-					</dl>
-				</div>
-			</div>
-		</div>
-	</div>
+	{{> @admin-gallery-info}}
 
 	{{> @admin-import-content}}
 
-	<div class="container mt-7">
+	<div class="container mt-6">
 		<div class="row">
 			<div class="col-24">
 				<div class="d-flex mb-3">
-					<h4 class="text-info">— Gallery Content
+					<h5 class="text-info">— Gallery Content
 						<span class="text-info">
 							<img class="inject-me icon text-info" src="{{path '/assets/img/icons/ic_dot_24px.svg' }}" />
 						</span>
 						<small class="text-gray-light">3 items</small>
-					</h4>
+					</h5>
 					<div class="ml-auto align-self-center">
 						<a href="#" class="btn btn-outline-danger btn-sm float-right" data-toggle="modal" data-target="#modal-alert">Remove all content</a>
 					</div>
@@ -97,13 +30,13 @@
 	</div>
 </div>
 
-<div class="container pt-4">
+<div class="container pt-3">
 	<div class="row">
 		<div class="col-24 mt-4">
 			<div class="d-flex">
 				<div class="ml-auto align-self-center">
 					<div class="align-self-end btn-group mt-2" role="group" aria-label="Basic example">
-						<a href="#" class="btn btn-outline-danger">Delete</a>
+						<a href="#" class="btn btn-outline-danger" data-toggle="modal" data-target="#modal-alert">Delete</a>
 						<a href="#" class="btn btn-secondary">Unpublish</a>
 						<a href="#" class="btn btn-primary">Publish</a>
 					</div>
@@ -117,4 +50,4 @@
 
 {{> @footer-admin }}
 
-{{> @modal-alert id="modal-alert" }}
+{{> @modal-alert id="modal-alert" actionPrimary="Delete" actionSecondary="Close"}}
