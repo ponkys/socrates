@@ -588,7 +588,7 @@ $zindex-tooltip:                    1070 !default;
 
 // Navs
 
-$nav-link-padding-y:                $input-btn-padding-y !default;
+$nav-link-padding-y:                $input-btn-padding-y-lg !default;
 $nav-link-padding-x:                2rem !default;
 $nav-link-disabled-color:           $brand-gray-light !default;
 
@@ -609,10 +609,10 @@ $nav-divider-margin-y:              ($spacer / 2) !default;
 
 // Navbar
 
-$navbar-padding-y:                  ($spacer) !default;
-$navbar-padding-x:                  $spacer !default;
+$navbar-padding-y:                  0 !default;
+$navbar-padding-x:                  0 !default;
 
-$navbar-nav-link-padding-x:         .5rem !default;
+$navbar-nav-link-padding-x:         1rem !default;
 
 $navbar-brand-font-size:            $font-size-lg !default;
 // Compute the navbar-brand padding-y so the navbar-brand will have the same height as navbar-text and nav-link
@@ -632,9 +632,9 @@ $navbar-dark-disabled-color:        rgba($white, .25) !default;
 $navbar-dark-toggler-icon-bg:       str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-dark-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23") !default;
 $navbar-dark-toggler-border-color:  rgba($white, .1) !default;
 
-$navbar-light-color:                $brand-gray-light !default;
+$navbar-light-color:                $brand-gray !default;
 $navbar-light-hover-color:          darken($brand-gray-light, 10%) !default;
-$navbar-light-active-color:         darken($brand-gray-light, 10%) !default;
+$navbar-light-active-color:         $brand-gray-darker !default;
 $navbar-light-disabled-color:       rgba($black, .3) !default;
 $navbar-light-toggler-icon-bg:      str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-light-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23") !default;
 $navbar-light-toggler-border-color: rgba($black, .1) !default;
