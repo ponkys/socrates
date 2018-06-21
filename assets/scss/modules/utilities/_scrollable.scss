@@ -1,0 +1,27 @@
+// scroll on mobile
+// @include media-breakpoint-down(md) {
+// 	.container-scroll {
+// 		// width: 100vw;
+// 		// padding-left: 0;
+// 		// padding-right: 0;
+// 	}
+// }
+.row-scroll {
+	white-space: nowrap;
+	overflow-y: hidden;
+	overflow-x: scroll;
+	-webkit-overflow-scrolling: touch;
+	display: block;
+
+	::-webkit-scrollbar {
+		display: none;
+	}
+}
+.col-entity-tile {
+	display: inline-block;
+	width: 11rem;
+}
+.col-scroll {
+	display: inline-block;
+	white-space: initial;
+}

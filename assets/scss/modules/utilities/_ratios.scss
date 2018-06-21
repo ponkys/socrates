@@ -1,0 +1,34 @@
+// Used mainly for resizing images based on specific ratio
+
+.rect {
+	position: relative;
+	display: block;
+	background-size: cover;
+	background-position: center;
+	height: 0;
+	padding: 0;
+	overflow: hidden;
+
+	&.rect-16-9 {
+		padding-bottom: 56.25%;
+	}
+	&.rect-4-3 {
+		padding-bottom: 75%;
+	}
+
+	&.rect-1-1 {
+		padding-bottom: 100%;
+	}
+
+	@include media-breakpoint-up(lg) {
+		&.rect-lg-16-9 {
+			padding-bottom: 56.25%;
+		}
+		&.rect-lg-4-3 {
+			padding-bottom: 75%;
+		}
+		&.rect-lg-1-1 {
+			padding-bottom: 100%;
+		}
+	}
+}
