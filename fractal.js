@@ -33,6 +33,6 @@ fractal.web.set('static.path', path.join(__dirname, 'public'));
 /*
  * build
  */
-fractal.web.set('builder.dest', '/socrates/dist' + '/build');
+fractal.web.set('builder.dest', 'dist');
 
 fractal.components.set('default.preview', '@preview');
