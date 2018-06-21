@@ -1,0 +1,21 @@
+<div class="container mt-6 mt-lg-7">
+  <div class="row">
+    <div class="col-24">
+      <div class="d-flex">
+        {{#if icon}}
+          {{#if subtitle}}
+            <img src="{{icon}}" alt="icon url" class="mr-3 size-3 align-self-center" />
+          {{else}}
+            <img src="{{icon}}" alt="icon url" class="mr-3 size-2 align-self-center" />
+          {{/if}}
+        {{/if}}
+        <div>
+          <h3 class="m-0 font-weight-bold">{{title}}</h3>
+          {{#if subtitle}}
+          <h6 class="m-0 text-gray-light">{{subtitle}}</h6>
+          {{/if}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

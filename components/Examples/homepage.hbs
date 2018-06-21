@@ -1,0 +1,46 @@
+{{> @navbar-consumer className="sticky-top"}}
+
+{{!-- <div class="container">
+	<div class="row">
+		<div class="col-24">
+			<img class="img-fluid" src="{{path '/assets/img/cover-story.png' }}" />
+		</div>
+	</div>
+</div> --}}
+
+{{> @title-cell
+	icon="https://onefootball.com/assets/img/zap.png"
+	title="Popular Pages"
+}}
+{{> @entity-entries }}
+
+{{> @gallery-videos-alt
+	className="border-bottom pb-6"
+	icon="https://images.onefootball.com/icons/leagueColoredCompetition/128/90.png"
+	title="Watch ICC live"
+	subtitle="Find all todays matches"
+}}
+
+{{> @gallery-videos
+	className="border-bottom pb-6"
+	icon="https://images.onefootball.com/icons/leagueColoredCompetition/128/90.png"
+	title="ICC highlights"
+	subtitle="some title"
+}}
+
+{{> @gallery-news
+	className="border-bottom pb-7"
+	icon="https://emojipedia-us.s3.amazonaws.com/thumbs/320/apple/129/fire_1f525.png"
+	title="Top News"
+	subtitle="Curated by Onefootball team"
+}}
+
+
+{{> @gallery-news
+	className="bg-gradient-gray-inverse pb-7"
+	icon="https://en.onefootball.com/wp-content/uploads/sites/10/2018/01/premier-league-logo.png"
+	title="Premier League"
+	subtitle="Curated by Onefootball team"
+}}
+
+{{> @footer}}

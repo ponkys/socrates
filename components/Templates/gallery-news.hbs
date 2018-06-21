@@ -1,27 +1,12 @@
 <div class="{{className}}">
-  <div class="container mt-6 mt-lg-7">
-    <div class="row">
-      <div class="col-24">
-        {{!-- <hr class="mt-3 mb-5" /> --}}
-        <div class="d-flex">
-          {{#if icon}}
-            <img src="{{icon}}" alt="icon url" class="mr-3 size-3 align-self-center" />
-          {{/if}}
-          <div>
-            <h3 class="m-0 font-weight-bold">{{title}}</h3>
-            <h6 class="m-0 text-gray-light">{{subtitle}}</h6>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  {{> @title-cell cell-icon="{{icon}}" cell-title="title" cell-subtitle="subtitle"}}
   <div class="container">
     <div class="row">
       <div class="col-24">
         <div class="row">
           <div class="col-24 col-md-12">
             <div class="row">
-              {{> @card-article-lg heading="h3" className="col-24 col-md-24 mt-4"
+              {{> @card-article-lg ratio="4-3" heading="h3" className="col-24 col-md-24 mt-4"
               img="https://image-service.onefootball.com/resize?fit=max&image=http%3A%2F%2Fimages.performgroup.com%2Fdi%2Flibrary%2Fomnisport%2F7e%2Fa8%2Fandres-iniesta-cropped_14w61m27atwmz1kinh3y3xnlzf.jpg%3Ft%3D625192635&q=25&w=1080"
               title="Iniesta misses training as Barcelona step up Clasico preparations"
               timestamp="2h ago"
@@ -30,22 +15,22 @@
           </div>
           <div class="col-24 col-md-12">
             <div class="row">
-              {{> @card-article-sm heading="h4" className="col-24 col-md-24 mt-4"
+              {{> @card-article-sm heading="h4" className="col-24 col-md-24 mt-5 mt-lg-4"
               img="https://image-service.onefootball.com/resize?fit=max&image=https%3A%2F%2Fen.onefootball.com%2Fwp-content%2Fuploads%2Fsites%2F10%2F2018%2F05%2FJuventus-v-Atalanta-BC-TIM-Cup-1525335363-e1525335392761.jpg&q=75&w=1080"
               title="Manchester United make Alex Sandro 'number one target' for the summer"
               timestamp="2h ago"}}
 
-              {{> @card-article-sm heading="h4" className="col-24 col-md-24 mt-4"
+              {{> @card-article-sm heading="h4" className="col-24 col-md-24 mt-5 mt-lg-4"
               img="https://image-service.onefootball.com/resize?fit=max&image=https%3A%2F%2Fen.onefootball.com%2Fwp-content%2Fuploads%2Fsites%2F10%2F2018%2F05%2Fhttp_2F2Fimages.performgroup.com2Fdi2Flibrary2Fomnisport2Fa62F3b2Fjordialba-cropped_1oih3wvyxnm111lck7ndrmue44-e1525325022408.jpeg&q=75&w=1080"
               title="📊 Onefootball Power Rankings: Pathetic PSG and unbeaten Barça"
               timestamp="2h ago"}}
 
-              {{> @card-article-sm heading="h4" className="col-24 col-md-24 mt-4"
+              {{> @card-article-sm heading="h4" className="col-24 col-md-24 mt-5 mt-lg-4"
               img="https://image-service.onefootball.com/resize?fit=max&image=http%3A%2F%2Fimages.performgroup.com%2Fdi%2Flibrary%2Fomnisport%2Ff8%2F92%2Fmohamed-salah-cropped_2r0aektkf7ex1uhw1e6ctrqag.jpg%3Ft%3D629695699&q=25&w=1080"
               title="Champions League final not me versus Ronaldo, claims Salah"
               timestamp="2h ago"}}
 
-              {{> @card-article-sm heading="h4" className="col-24 col-md-24 mt-4"
+              {{> @card-article-sm heading="h4" className="col-24 col-md-24 mt-5 mt-lg-4"
               img="https://image-service.onefootball.com/resize?fit=max&image=http%3A%2F%2Fimages.performgroup.com%2Fdi%2Flibrary%2Fomnisport%2F81%2Fc7%2Fcristiano-ronaldo-cropped_plw55r75l9iu1kq9afgev1exg.jpg%3Ft%3D530880763&q=25&w=1080"
               title="Ronaldo injury update: Zidane says Madrid star will be 150 per cent fit for Champions League"
               timestamp="2h ago"}}

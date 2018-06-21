@@ -1,9 +1,15 @@
 <div class="{{className}}">
   <a href="#">
-    <div class="rounded-lg rect rect-4-3" style="background-image: url('{{img}}')"></div>
+    <div class="rounded-lg rect rect-{{ratio}}" style="background-image: url('{{img}}')">
+        {{#if isVideo}}
+          <div class="position-absolute center-absolute m-auto rounded-circle bg-gray-darker size-4">
+            <img class="position-absolute center-absolute size-3 inject-me text-white" src="{{path '/assets/img/icons/ic_play_arrow_24px.svg' }}" />
+          </div>
+        {{/if}}
+    </div>
     {{!-- <img src="{{img}}" alt="" class="img-fluid rounded-lg"> --}}
     <{{heading}} class="font-weight-bold mt-3">
-      {{title}}
+    {{title}}
     </{{heading}}>
     <p class="mt-2 mb-0 text-lg text-gray-light font-weight-semibold">
       {{teaser}}
