@@ -25,7 +25,7 @@
 @import "./node_modules/bootstrap/scss/custom-forms";
 @import "./node_modules/bootstrap/scss/nav";
 @import "./node_modules/bootstrap/scss/navbar";
-@import "./node_modules/bootstrap/scss/card";
+// @import "./node_modules/bootstrap/scss/card"; Replaced by a WIP custom version
 @import "./node_modules/bootstrap/scss/breadcrumb";
 @import "./node_modules/bootstrap/scss/pagination";
 @import "./node_modules/bootstrap/scss/badge";
@@ -56,5 +56,6 @@
 @import 'modules/dropdowns';
 @import 'modules/navs';
 @import 'modules/navbar';
+@import 'modules/card';
 @import 'modules/modal';
 @import 'modules/utilities';

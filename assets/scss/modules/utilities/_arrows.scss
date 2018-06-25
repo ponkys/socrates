@@ -1,0 +1,15 @@
+// Arrows (left/right)
+
+@include media-breakpoint-up(lg) {
+	.arrow {
+		z-index: $zindex-dropdown;
+		&.arrow-left {
+			left: -$spacer * 10;
+			right: auto;
+		}
+		&.arrow-right {
+			right: -$spacer * 10;
+			left: auto;
+		}
+	}
+}

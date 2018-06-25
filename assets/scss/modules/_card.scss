@@ -1,0 +1,8 @@
+.card {
+	overflow: hidden;
+
+	&:hover {
+		@include transition($transition-default);
+		opacity: .8;
+	}
+}

@@ -1,6 +1,8 @@
 <div class="{{className}}">
   {{> @title-cell cell-icon="{{icon}}" cell-title="title" cell-subtitle="subtitle"}}
-  <div class="container container-scroll">
+  <div class="container container-scroll position-relative">
+  	{{> @arrow direction="left"}}
+  	{{> @arrow direction="right"}}
     <div class="row row-scroll pb-3">
       <div class="col-22 col-md-10 col-scroll d-inline-block">
         <div class="row">

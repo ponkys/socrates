@@ -1,9 +1,9 @@
-<div class="{{className}}">
+<div class="card {{className}}">
   <a href="#">
     <div class="rounded-lg rect rect-{{ratio}}" style="background-image: url('{{img}}')">
         {{#if isVideo}}
-          <div class="position-absolute center-absolute m-auto rounded-circle bg-gray-darker size-4">
-            <img class="position-absolute center-absolute size-3 inject-me text-white" src="{{path '/assets/img/icons/ic_play_arrow_24px.svg' }}" />
+          <div class="position-absolute center-absolute m-auto rounded-circle size-4 blur-backdrop text-white">
+            <img class="position-absolute center-absolute size-3 inject-me" src="{{path '/assets/img/icons/ic_play_arrow_24px.svg' }}" />
           </div>
         {{/if}}
     </div>
