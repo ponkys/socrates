@@ -1,0 +1,7 @@
+// Extras
+
+@mixin blur-backdrop {
+	background: rgba($brand-gray-darker, .8);
+	-webkit-backdrop-filter: saturate(180%) blur(20px);
+	backdrop-filter: saturate(180%) blur(20px);
+}

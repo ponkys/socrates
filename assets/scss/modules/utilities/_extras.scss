@@ -36,3 +36,8 @@
 .overflow-hidden {
 	overflow: hidden;
 }
+
+// blur
+.blur-backdrop {
+	@include blur-backdrop;
+}
