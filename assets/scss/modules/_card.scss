@@ -3,6 +3,6 @@
 
 	&:hover {
 		@include transition($transition-default);
-		opacity: .8;
+		opacity: $alpha-80;
 	}
 }

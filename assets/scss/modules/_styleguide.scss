@@ -116,6 +116,9 @@ $font-punchline: 'Onefootball Punchline', $font-brand;
   $base-spacing: 8px;
 
   $transition-default: all .350s ease-in-out;
+  $alpha-80: .8;
+  $alpha-60: .6;
+  $alpha-40: .4;
 
   %disabled {
     pointer-events: none;
