@@ -4,7 +4,6 @@
 	display: inline-block;
 	overflow: hidden; // Ensure page layout in Firefox should images fail to load
 	vertical-align: middle;
-	border-radius: $badge-pill-border-radius;
 	background-size: cover; // in case it's used as a background-image
 	@include size(1em);
 }
