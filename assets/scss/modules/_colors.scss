@@ -29,4 +29,5 @@
   @include text-emphasis-variant('.text-gray-darker', $brand-gray-darker);
   @include text-emphasis-variant('.text-gray-dark', $brand-gray-dark);
   @include text-emphasis-variant('.text-gray-light', $brand-gray-light);
+  @include text-emphasis-variant('.text-gray-lighter', $brand-gray-lighter);
   @include text-emphasis-variant('.text-white', $white);
