@@ -1,4 +1,4 @@
 apiVersion: v1
-description: Funtik deployment
-name: funtik
+description: socreates deployment
+name: socrates
 version: VERSION
