@@ -8,7 +8,7 @@ service:
   name: socrates
   healthcheck: /
   type: LoadBalancer
-  externalSSLPort: 443
+  externalSSLPort: 80
   internalPort: 3000
   initialdelay: 5
   timeout: 2

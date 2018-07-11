@@ -13,7 +13,6 @@ metadata:
     service.beta.kubernetes.io/aws-load-balancer-internal: 0.0.0.0/0
     service.beta.kubernetes.io/aws-load-balancer-ssl-ports: "{{ .Values.service.externalSSLPort }}"
     service.beta.kubernetes.io/aws-load-balancer-backend-protocol: {{ .Values.service.backend }}
-    service.beta.kubernetes.io/aws-load-balancer-ssl-cert: arn:aws:iam::706922411989:server-certificate/wildcard.onefootball.com_2017
 spec:
   type: {{ .Values.service.type }}
   loadBalancerSourceRanges:
