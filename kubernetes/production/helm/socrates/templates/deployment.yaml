@@ -1,0 +1,66 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  namespace: {{ .Chart.Name }}
+  name: {{ .Chart.Name }}
+  labels:
+    app: {{ .Chart.Name }}
+    chart: {{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}
+    release: {{ .Release.Name }}
+    env: {{ .Values.envName }}
+    heritage: {{ .Release.Service }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  strategy:
+    rollingUpdate:
+      maxSurge: 30%
+      maxUnavailable: 15%
+  template:
+    metadata:
+      namespace: {{ .Chart.Name }}
+      annotations:
+        iam.amazonaws.com/role: {{ .Chart.Name }}
+      labels:
+        app: {{ .Chart.Name }}
+        release: {{ .Release.Name }}
+        env: {{ .Values.envName }}
+    spec:
+      containers:
+        - name: {{ .Chart.Name }}
+          securityContext:
+            privileged: true
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          env:
+            - name: NEWRELIC_KEY
+              value: "71d7311c0b9623f3b9d2388fc6deb3f7f63a9842"
+            - name: GOMAXPROCS
+              value: "1"
+            - name: GOGC
+              value: "800"
+            - name: GOOGLE_APPLICATION_CREDENTIALS
+              value: "youtube-auth.json"
+          ports:
+            - containerPort: {{ .Values.service.internalPort }}
+          readinessProbe:
+            httpGet:
+              path: {{ .Values.service.healthcheck }}
+              port: {{ .Values.service.internalPort }}
+            initialDelaySeconds: {{ .Values.service.initialdelay }}
+            timeoutSeconds: {{ .Values.service.timeout }}
+          livenessProbe:
+            httpGet:
+              path: {{ .Values.service.healthcheck }}
+              port: {{ .Values.service.internalPort }}
+            initialDelaySeconds: {{ .Values.service.initialdelay }}
+            timeoutSeconds: {{ .Values.service.timeout }}
+          lifecycle:
+            preStop:
+              exec:
+                command: ["kill","-15","1"]
+          resources:
+{{ toYaml .Values.resources | indent 12 }}
+    {{- if .Values.nodeSelector }}
+      nodeSelector:
+{{ toYaml .Values.nodeSelector | indent 8 }}
+    {{- end }}

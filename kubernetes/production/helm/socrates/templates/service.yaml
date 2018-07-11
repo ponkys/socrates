@@ -1,0 +1,28 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Chart.Name }}
+  labels:
+    app: {{ .Chart.Name }}
+    chart: {{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}
+    release: {{ .Release.Name }}
+    env: {{ .Values.envName }}
+    heritage: {{ .Release.Service }}
+  namespace: {{ .Chart.Name }}
+  annotations:
+    service.beta.kubernetes.io/aws-load-balancer-internal: 0.0.0.0/0
+    service.beta.kubernetes.io/aws-load-balancer-ssl-ports: "{{ .Values.service.externalSSLPort }}"
+    service.beta.kubernetes.io/aws-load-balancer-backend-protocol: {{ .Values.service.backend }}
+    service.beta.kubernetes.io/aws-load-balancer-ssl-cert: arn:aws:iam::706922411989:server-certificate/wildcard.onefootball.com_2017
+spec:
+  type: {{ .Values.service.type }}
+  loadBalancerSourceRanges:
+  - 0.0.0.0/0
+  ports:
+    - port: {{ .Values.service.externalSSLPort }}
+      targetPort: {{ .Values.service.internalPort }}
+      protocol: TCP
+      name: https
+  selector:
+    app: {{ .Chart.Name }}
+    release: {{ .Release.Name }}
