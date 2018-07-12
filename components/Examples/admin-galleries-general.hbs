@@ -1,0 +1,82 @@
+{{!-- Admin --}}
+
+{{> @navbar-admin className="sticky-top" }}
+
+<div class="socrates-content">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-24 mt-6">
+				<div class="d-flex">
+					<h2 class="font-weight-bold">Galleries</h2>
+				</div>
+
+				<ul class="nav nav-pills mt-3">
+					<li class="nav-item">
+						<a class="nav-link active" href="admin-galleries-general">General {{> @badge color="info" text="12"}}</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="admin-galleries-entities">Leagues {{> @badge color="info" text="76"}}</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="admin-galleries-entities">Teams {{> @badge color="info" text="138"}}</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="admin-galleries-entities">Players {{> @badge color="info" text="45"}}</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Videos Stream {{> @badge color="info" text="2"}}</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Transfers Stream {{> @badge color="info" text="1"}}</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="bg-gradient-gray border mt-4 rounded-lg p-3">
+			{{> @title-cell-gallery-area bg="gray-lightest" color="info" title="Curated Area #1" isAction="true" isBadge="true" url="admin-add-gallery-general-step-1" subtitle="First thing on the stream & controlled by the Newsroom"}}
+
+			{{> @gallery-list-item isDraggable="true" title="Top News" type="News" icon="https://emojipedia-us.s3.amazonaws.com/thumbs/320/apple/129/fire_1f525.png"}}
+			{{> @gallery-list-item isDraggable="true" title="World Cup" type="News" icon="https://images.onefootball.com/icons/leagueColoredCompetition/128/12.png"}}
+		</div>
+
+		{{> @area-banner bg="primary-dark" title="Favourite team & national team area" subtitle="Based on user's selection & max. 2 galleries"}}
+
+		<div class="bg-gradient-gray border mt-4 rounded-lg p-3">
+			{{> @title-cell-gallery-area bg="gray-lightest" color="info" title="Curated Area #2" isAction="true" isBadge="true" url="admin-add-gallery-general-step-1" subtitle="Comes after fav. teams area & controlled by the Newsroom"}}
+			{{> @gallery-list-item isDraggable="true" title="Curated Matches" type="Matches" icon="https://en.onefootball.com/wp-content/uploads/sites/10/2018/06/curated-matches.png"}}
+			{{> @gallery-list-item isDraggable="true" title="World Cup Goals" type="Videos" icon="https://de.onefootball.com/wp-content/uploads/sites/11/2018/06/gallery_goals.png"}}
+			{{> @gallery-list-item isDraggable="true" title="Trending Videos" type="Videos" icon="https://en.onefootball.com/wp-content/uploads/sites/10/2018/05/imgonline-com-ua-shape-4hQTkWpcPb.png"}}
+		</div>
+
+		{{> @area-banner bg="gray-blue" title="Followed leagues, teams and players area" subtitle="Based on User's followship and ordered by the system"}}
+
+		<div class="bg-gradient-gray border mt-4 rounded-lg p-3">
+			{{> @title-cell-gallery-area bg="gray-lightest" color="info" title="Curated Area #3" isAction="true" isBadge="true" url="admin-add-gallery-general-step-1" subtitle="Comes after followed entities area & controlled by the Newsroom"}}
+			{{> @gallery-list-item isDraggable="true" title="Transfer Talk" type="News" icon="https://en.onefootball.com/wp-content/uploads/sites/10/2017/12/Money_Face_Emoji.png"}}
+		</div>
+
+		{{> @area-banner bg="primary-dark" title="Rest of the stream" subtitle="Based on User's followship and time relevance"}}
+
+		<div class="row">
+			<div class="col-24">
+				<p class="my-4 text-center">No galleries go here</p>
+			</div>
+		</div>
+
+		<div class="bg-gradient-gray border mt-4 rounded-lg p-3">
+			{{> @title-cell-gallery-area color="danger" title="Unpublished Galleries" subtitle="All unpublished galleries will drop here"}}
+			{{> @gallery-list-item isDraggable="true" title="World of football" type="News" icon=""}}
+		</div>
+
+	</div> <!--/.container-->
+
+</div> {{!-- /.socrates-content --}}
+
+{{!-- {{> @alert className="position-absolute"}} --}}
+{{!-- {{> @alert text="some error happened" className="elevated-2 w-25 position-fixed" inlineStyle="left: 16px; bottom:32px;"}} --}}
+
+{{> @footer-admin }}
+
+{{> @modal-alert id="modal-alert" actionPrimary="Delete"}}

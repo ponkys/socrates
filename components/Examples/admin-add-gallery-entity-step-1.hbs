@@ -1,0 +1,94 @@
+{{!-- Admin --}}
+
+{{> @navbar-admin className="sticky-top" }}
+
+<div class="socrates-content">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-24 mt-6">
+				<h3 class="mb-2 font-weight-bold">New Entity Gallery</h3>
+				<p class="text-muted">Only for a single entity</p>
+				<hr class="mt-4" />
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+
+		<div class="form-group row mt-4">
+			<label class="col-sm-4 col-form-label">Pick an entity</label>
+			<div class="col-sm-18">
+
+				<div class="custom-control custom-radio">
+					<input type="radio" id="positionRadio2" name="PositionRadio" class="custom-control-input">
+					<label class="custom-control-label" for="positionRadio2">Team<span class="text-muted"> (Favourite / Follow)</span></label>
+				</div>
+
+				<div class="mt-4 col-24">
+					<div class="row">
+						<div class="col-sm-14">
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<span class="input-group-text" id="inputGroupPrepend3">
+										<img class="inject-me size-lg ml-auto d-block" src="{{path '/assets/img/icons/ic_search_24px.svg' }}" />
+									</span>
+								</div>
+								<input type="text" class="form-control" placeholder="Search for Entity" />
+							</div>
+
+							<div class="row mt-4 no-gutters">
+								<div class="col-22 align-self-center">
+									<h5 class="m-0">
+										<img src="https://images.onefootball.com/icons/teams/164/263.png" class="size-2 mr-3" />Paris SG
+									</h5>
+								</div>
+								<div class="col-sm-2 align-self-center">
+									<a href="#" class="text-danger">
+										<img class="inject-me icon size-lg ml-auto d-block" src="{{path '/assets/img/icons/ic_close_circle_24px.svg' }}" data-toggle="tooltip" data-placement="top" title="Remove Entity" />
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<hr class="my-5" />
+
+				<div class="custom-control custom-radio">
+					<input type="radio" id="positionRadio22222" name="PositionRadio" class="custom-control-input">
+					<label class="custom-control-label" for="positionRadio22222">Competition<span class="text-muted"> (Follow)</span></label>
+				</div>
+
+				<hr class="my-5" />
+
+				<div class="custom-control custom-radio">
+					<input type="radio" id="positionRadio2233" name="PositionRadio" class="custom-control-input">
+					<label class="custom-control-label" for="positionRadio2233">Player<span class="text-muted"> (Follow)</span></label>
+				</div>
+
+			</div>
+		</div>
+
+		<hr class="mt-6 mb-4" />
+
+		<div class="form-group row mt-6">
+			<div class="col-sm-24 d-flex justify-content-end">
+				<div class="mr-5 align-self-center">
+					<p class="m-0 text-danger">error message goes here along side with highlighting the error box</p>
+				</div>
+				<a href="#" class="btn btn-secondary mr-2">Cancel</a>
+				<a href="admin-add-gallery-content-step-2" class="btn btn-primary">Start Curating</a>
+			</div>
+		</div>
+	</form>
+</div>
+</div>
+
+</div>
+
+</div> {{!-- /.socrates-content --}}
+
+{{> @footer-admin }}
+
+{{> @modal-search id="modal-search" actionPrimary="Done"}}

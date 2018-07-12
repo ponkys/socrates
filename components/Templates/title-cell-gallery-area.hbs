@@ -1,0 +1,19 @@
+<div class="row">
+	<div class="col-24 {{className}}">
+		<div class="d-flex align-items-center">
+			<div>
+				<h5 class="text-{{color}} font-weight-semibold">{{title}}</h5>
+				<p class="text-sm m-0">{{subtitle}} {{#if isBadge}} {{> @badge color="danger" text="0/2 galleries"}} {{/if}}</p>
+			</div>
+			{{#if isAction}}
+			<div class="ml-auto">
+				{{#if btn}}
+				<a href="{{url}}" class="btn btn-sm btn-info" data-toggle="tooltip">{{btn}}</a>
+				{{else}}
+				<a href="{{url}}" class="btn btn-sm btn-info" data-toggle="tooltip" data-placement="top" title="Gallery will be created within this area">Create New Gallery</a>
+				{{/if}}
+			</div>
+			{{/if}}
+		</div>
+	</div>
+</div>

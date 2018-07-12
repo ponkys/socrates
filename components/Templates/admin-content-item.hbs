@@ -1,12 +1,11 @@
-
-<div class="row mt-2">
-	<div class="col-sm-16">
+<div class="row mt-2 no-gutters">
+	<div class="col-sm-18">
 		<div class="row">
 			<div class="col-6">
 				<img class="img-fluid rounded" src="https://image-service.onefootball.com/resize?fit=max&image=http%3A%2F%2Fimages.performgroup.com%2Fdi%2Flibrary%2Fomnisport%2Fe9%2F63%2Fbayern-boss-jupp-heynckes_kxn2thm6j13l16r7ai4jkxe86.jpg%3Ft%3D631633994&q=25&w=1080" alt="Generic placeholder image">
 			</div>
 			<div class="col-18 align-self-center">
-				<span class="font-weight-bold badge badge-primary">DISPLAYED</span>
+				{{> @badge text="DISPLAYED" color="primary"}}
 				<h6 class="font-weight-bold">Heynckes breaks Champions League record as Bayern march on</h6>
 				<div class="mt-1">
 					<span class="text-gray-light text-sm">Jan 17, 2018</span>
@@ -21,26 +20,34 @@
 
 	<div class="col-sm-2 align-self-center">
 		<a href="#" class="text-gray-light">
-			<img class="inject-me icon size-2 mx-auto d-block" src="{{path '/assets/img/icons/ic_content_copy_24px.svg' }}" data-toggle="tooltip" data-placement="top" title="Click to copy link" />
+			<img class="inject-me icon size-2 ml-auto d-block" src="{{path '/assets/img/icons/ic_content_copy_24px.svg' }}" data-toggle="tooltip" data-placement="top" title="Click to copy link" />
 		</a>
 	</div>
 
 	<div class="col-sm-2 align-self-center">
 		<a href="#" class="text-gray-light">
-			<img class="inject-me icon size-2 mx-auto d-block" src="{{path '/assets/img/icons/ic_edit_24px.svg' }}" data-toggle="tooltip" data-placement="top" title="Edit" />
+			<img class="inject-me icon size-2 ml-auto d-block" src="{{path '/assets/img/icons/ic_cursor_move_24px.svg' }}" data-toggle="tooltip" data-placement="top" title="Rearrange" />
 		</a>
 	</div>
 
 	<div class="col-sm-2 align-self-center">
-		<a href="#" class="text-gray-light">
-			<img class="inject-me icon size-2 mx-auto d-block" src="{{path '/assets/img/icons/ic_cursor_move_24px.svg' }}" data-toggle="tooltip" data-placement="top" title="Rearrange" />
-		</a>
-	</div>
-
-	<div class="col-sm-2 align-self-center">
-		<a href="#" class="text-danger">
-			<img class="inject-me icon size-2 mx-auto d-block" src="{{path '/assets/img/icons/ic_close_circle_24px.svg' }}" data-toggle="tooltip" data-placement="top" title="Remove from Gallery" />
-		</a>
+		<div class="dropdown">
+			<a href="#" class="text-gray-light dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<img class="inject-me icon size-2 ml-auto d-block" src="{{path '/assets/img/icons/ic_more_horiz_24px.svg' }}" />
+			</a>
+			<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+				<a href="#" class="dropdown-item">
+					<img class="inject-me icon size-lg mr-2" src="{{path '/assets/img/icons/ic_title_24px.svg' }}" /> Copy title
+				</a>
+				<a class="dropdown-item" href="#">
+					<img class="inject-me icon size-lg mr-2" src="{{path '/assets/img/icons/ic_edit_24px.svg' }}" /> Edit item
+				</a>
+				<a class="dropdown-item text-danger" href="#">
+					<img class="inject-me icon size-lg mr-2" src="{{path '/assets/img/icons/ic_delete_24px.svg' }}" />
+					Delete
+				</a>
+			</div>
+		</div>
 	</div>
 
 	<div class="col-24">

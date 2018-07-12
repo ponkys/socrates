@@ -41,3 +41,7 @@
 .blur-backdrop {
 	@include blur-backdrop;
 }
+
+.bg-gradient-primary-diagonal {
+	background: linear-gradient(45deg, $brand-green-dark 0%,$brand-green 100%);
+}

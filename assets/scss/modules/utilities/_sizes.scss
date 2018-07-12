@@ -1,5 +1,9 @@
 // Sizes
 
+.size-1 {
+	@include size(1em);
+}
+
 .size-lg {
 	@include size(1.3em);
 }

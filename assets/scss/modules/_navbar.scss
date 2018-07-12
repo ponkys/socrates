@@ -7,14 +7,29 @@
 }
 
 .nav-link {
-	border-bottom: 2px solid transparent;
+	display: block;
+	padding: $nav-link-padding-y $nav-link-padding-x;
+	color: $brand-gray;
+	@include media-breakpoint-down(md) {
+		border-left: 4px solid transparent;
+		padding-left: $spacer !important;
+	}
+	@include media-breakpoint-up(lg) {
+		border-bottom: 2px solid transparent;
+	}
 }
 
 .navbar-light {
 	.navbar-nav {
 		.active > .nav-link,
 		.nav-link.active {
-			border-bottom: 2px solid $brand-green;
+
+			@include media-breakpoint-down(md) {
+				border-left-color: $brand-green;
+			}
+			@include media-breakpoint-up(lg) {
+				border-bottom-color: $brand-green;
+			}
 		}
 
 		.dropdown-toggle {

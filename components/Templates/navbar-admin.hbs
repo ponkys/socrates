@@ -1,57 +1,57 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-white elevated-2 {{className}}">
-	<div class="container-fluid">
-		<a class="navbar-brand" href="#">
-			<img class="" src="{{path '/assets/img/brand.svg' }}" />
-		</a>
-		<ul class="navbar-nav mr-auto">
-			<li class="nav-item dropdown dropdown-edition">
-				<a class="nav-link dropdown-toggle dropdown-edition-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					<span class="font-brand text-primary-dark"><span class="icon size-lg">🇪🇸</span> Spain - Newsdesk</span>
-					<img class="inject-me icon text-primary-dark" src="{{path '/assets/img/icons/ic_chevron_down_24px.svg' }}" />
-				</a>
-				<div class="dropdown-menu px-2" aria-labelledby="navbarDropdown">
-					<span class="dropdown-header text-sm">Switch Edition</span>
-					<div class="row flex-nowrap">
-						<div class="col-12">
-							<a class="dropdown-item rounded" href="#">🇺🇸 Intertantional</a>
-							<a class="dropdown-item rounded active" href="#">🇪🇸 Spain</a>
-							<a class="dropdown-item rounded" href="#">🇦🇷 Argentina</a>
-							<a class="dropdown-item rounded" href="#">🇫🇷 France</a>
-							<a class="dropdown-item rounded" href="#">🇧🇷 Brazil</a>
-							<a class="dropdown-item rounded" href="#">🇮🇹 Italy</a>
-						</div>
-						<div class="col-12">
-							<a class="dropdown-item rounded" href="#">🇨🇱 Chile</a>
-							<a class="dropdown-item rounded" href="#">🇲🇽 Mexico</a>
-							<a class="dropdown-item rounded" href="#">🇨🇴 Colombia</a>
-							<a class="dropdown-item rounded" href="#">🇳🇱 Netherlands</a>
-							<a class="dropdown-item rounded" href="#">🇩🇪 Germany</a>
-						</div>
+	<a class="navbar-brand pl-2" href="#">
+		<img class="d-none d-lg-block" src="{{path '/assets/img/brand.svg' }}" />
+		<img class="d-lg-none" src="{{path '/assets/img/brand-icon.svg' }}" />
+	</a>
+	<ul class="navbar-nav mr-auto">
+		<li class="nav-item dropdown dropdown-edition">
+			<a class="nav-link dropdown-toggle dropdown-edition-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="font-brand text-primary-dark"><span class="icon size-lg">🇪🇸</span> Spanish - Newsdesk</span>
+				<img class="inject-me icon text-primary-dark" src="{{path '/assets/img/icons/ic_chevron_down_24px.svg' }}" />
+			</a>
+			<div class="dropdown-menu px-2 position-absolute" aria-labelledby="navbarDropdown">
+				<span class="dropdown-header text-sm">Switch Language</span>
+				<div class="row flex-nowrap">
+					<div class="col-12">
+						<a class="dropdown-item rounded mt-1" href="#">🇬🇧 English</a>
+						<a class="dropdown-item rounded mt-1 active" href="#">🇪🇸 Spanish</a>
+						{{!-- <a class="dropdown-item rounded mt-1" href="#">🇦🇷 Argentina</a> --}}
+						{{!-- <a class="dropdown-item rounded mt-1" href="#">🇧🇷 Brazil</a> --}}
+						<a class="dropdown-item rounded mt-1" href="#">🇮🇹 Italian</a>
 					</div>
+					<div class="col-12">
+						{{!-- <a class="dropdown-item rounded mt-1" href="#">🇨🇱 Chile</a>
+						<a class="dropdown-item rounded mt-1" href="#">🇲🇽 Mexico</a>
+						<a class="dropdown-item rounded mt-1" href="#">🇨🇴 Colombia</a> --}}
+						<a class="dropdown-item rounded mt-1" href="#">🇫🇷 French</a>
+						<a class="dropdown-item rounded mt-1" href="#">🇩🇪 German</a>
+					</div>
+				</div>
+			</div>
+		</li>
+	</ul>
+	<button class="navbar-toggler border-0 pr-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<img class="size-2 text-gray inject-me mx-auto d-block" src="{{path '/assets/img/icons/ic_more_horiz_24px.svg' }}" />
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item"><a href="#" class="nav-link">Dashboard</a></li>
+			<li class="nav-item active"><a href="admin-galleries-general" class="nav-link">Galleries</a></li>
+			<li class="nav-item"><a href="#" class="nav-link">Video</a></li>
+			<li class="nav-item dropdown">
+				<a class="nav-link text-gray-light dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<img class="icon size-lg inject-me" src="{{path '/assets/img/icons/ic_account_circle_24px.svg' }}" />
+					{{!-- <div class="avatar size-lg mr-2" style="background-image: url(http://i.pravatar.cc/300);"></div>@username --}}
+					MonicaLatasha
+					<img class="inject-me icon text-gray-light" src="{{path '/assets/img/icons/ic_chevron_down_24px.svg' }}" />
+				</a>
+				<div class="dropdown-menu position-absolute" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<span class="dropdown-header text-sm">Content Editor</span>
+					<a class="dropdown-item" href="#">Settings</a>
+					<a href="admin-login" class="dropdown-item text-danger">Logout</a>
 				</div>
 			</li>
 		</ul>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item"><a href="#" class="nav-link">Dashboard</a></li>
-				<li class="nav-item active"><a href="#" class="nav-link">Galleries</a></li>
-				<li class="nav-item"><a href="#" class="nav-link">Entertainment</a></li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						<div class="avatar size-lg mr-2" style="background-image: url(http://i.pravatar.cc/300);"></div>@username
-						<img class="inject-me icon text-gray-light" src="{{path '/assets/img/icons/ic_chevron_down_24px.svg' }}" />
-					</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<span class="dropdown-header text-sm">Content Editor</span>
-						<a class="dropdown-item" href="#">Settings</a>
-						<a class="dropdown-item text-danger" href="#">Logout</a>
-					</div>
-				</li>
-			</ul>
-		</div>
 	</div>
 </nav>

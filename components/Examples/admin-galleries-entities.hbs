@@ -1,0 +1,92 @@
+{{!-- Admin --}}
+
+{{> @navbar-admin className="sticky-top" }}
+
+<div class="socrates-content">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-24 mt-6">
+				<div class="d-flex">
+					<h2 class="font-weight-bold">Galleries</h2>
+				</div>
+
+				<ul class="nav nav-pills mt-3">
+					<li class="nav-item">
+						<a class="nav-link" href="admin-galleries-general">General {{> @badge color="info" text="12"}}</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="admin-galleries-entities">Leagues {{> @badge color="info" text="76"}}</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="admin-galleries-entities">Teams {{> @badge color="info" text="138"}}</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="admin-galleries-entities">Players {{> @badge color="info" text="45"}}</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Videos Stream {{> @badge color="info" text="2"}}</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Transfers Stream {{> @badge color="info" text="1"}}</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		{{> @title-cell-gallery-area className="mt-4" bg="gray-lightest" color="info" title="Teams" isAction="true" btn="Curate for an entity" url="admin-add-gallery-entity-step-1" subtitle="Listing of all team galleries"}}
+
+		<div class="row">
+			<div class="col-24 mt-4 mb-2">
+				<div class="form-group row">
+					<div class="col-sm-10">
+						<div class="d-flex">
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<span class="input-group-text" id="inputGroupPrepend3">
+										<img class="inject-me size-lg ml-auto d-block" src="{{path '/assets/img/icons/ic_search_24px.svg' }}" />
+									</span>
+								</div>
+								<input type="text" class="form-control" placeholder="Search" />
+							</div>
+							<div class="align-self-center ml-3">
+								<a href="#" class="text-gray">
+									<img class="inject-me icon size-lg ml-auto d-block" src="{{path '/assets/img/icons/ic_close_circle_24px.svg' }}" />
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 ml-auto">
+						<select name="" id="" class="form-control">
+							<option value="">Least Edit</option>
+							<option value="">Last Edit</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		{{> @gallery-list-item isAuto="true" title="FC Bayern Munich News" type="News" icon="https://images.onefootball.com/icons/teams/164/6.png"}}
+		{{> @gallery-list-item title="Real Madrid News" type="News" icon="https://images.onefootball.com/icons/teams/164/26.png"}}
+		{{> @gallery-list-item title="Mohamed Salah" isPlayer="true" type="News" icon="https://image-service.onefootball.com/resize?fit=crop&h=180&image=https%3A%2F%2Fimages.onefootball.com%2Fplayers%2F27382.jpg&q=75&w=180"}}
+		{{> @gallery-list-item title="Primera División" type="News" icon="https://images.onefootball.com/icons/leagueColoredCompetition/128/10.png"}}
+		{{> @gallery-list-item title="Cristiano Ronaldo" isPlayer="true" type="News" icon="https://image-service.onefootball.com/resize?fit=crop&h=180&image=https%3A%2F%2Fimages.onefootball.com%2Fplayers%2F823.jpg&q=75&w=180"}}
+		{{> @gallery-list-item title="Liverpool News" type="News" icon="https://images.onefootball.com/icons/teams/164/18.png"}}
+		{{> @gallery-list-item title="Barcelona News" type="News" icon="https://images.onefootball.com/icons/teams/164/5.png"}}
+		{{> @gallery-list-item title="premier League" type="News" icon="https://images.onefootball.com/icons/leagueColoredCompetition/128/9.png"}}
+		{{> @gallery-list-item title="AC Milan News" type="News" icon="https://images.onefootball.com/icons/teams/164/23.png"}}
+		{{> @gallery-list-item title="Manchester Utd" type="News" icon="https://images.onefootball.com/icons/teams/164/21.png"}}
+
+		<div class="bg-gradient-gray border mt-6 rounded-lg p-3">
+			{{> @title-cell-gallery-area color="danger" title="Unpublished Galleries" subtitle="All unpublished galleries will drop here"}}
+			{{> @gallery-list-item title="Champions League" type="News" icon="https://images.onefootball.com/icons/leagueColoredCompetition/128/5.png"}}
+		</div>
+
+	</div> <!--/.container-->
+
+</div> {{!-- /.socrates-content --}}
+
+{{> @footer-admin }}
+
+{{> @modal-alert id="modal-alert" actionPrimary="Delete"}}
+{{> @modal-alert id="modal-automated-alert" actionPrimary="Switch to Curated" actionSecondary="View Content"}}
